@@ -1,0 +1,103 @@
+{
+    "juegos": [{
+            "nombre": "madden",
+            "precio": 24.99,
+            "categoria": "deportes",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "rory mcilroy pga tours",
+            "precio": 0,
+            "categoria": "deportes",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "ufc 3",
+            "precio": 59.99,
+            "categoria": "lucha",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "nba live 18",
+            "precio": 49.99,
+            "categoria": "baloncesto",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "nhl 18",
+            "precio": 39.99,
+            "categoria": "deportes",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "ncaa",
+            "precio": 9.99,
+            "categoria": "futbol",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "fifa street",
+            "precio": 29.99,
+            "categoria": "futbol",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "fight night champion",
+            "precio": 19.99,
+            "categoria": "lucha",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "star wars battlefront 2",
+            "precio": 59.99,
+            "categoria": "disparos",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        },
+        {
+            "nombre": "battlefield 1",
+            "precio": 59.99,
+            "categoria": "disparos",
+            "imagen": "imagenes/juegos/imagenMadden.png",
+            "logo": "imagenes/juegos/logoMadden.png",
+            "descripcion": "cualquier descripcion",
+            "estreno": "cualquier dia",
+            "peso": "muchas gigas"
+        }
+    ]
+}

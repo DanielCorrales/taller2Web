@@ -1,0 +1,515 @@
+//importo tipografias locales, no esta en googleFonts
+@font-face {
+    font-family: EASPORTS15;
+    src: url(../fonts/ea_font/EASPORTS15.ttf);
+}
+
+//importo tipografia de googleFonts
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,600,700');
+//colores
+$colorPrincipal: #221d53;
+//tipografias
+$tipografiaFifa: EASPORTS15;
+$tipografiaParrafos:Mukta Mahee;
+//definiciones globales
+$tamanoFuente: 28px;
+$tamanoMargen: 100px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: $tipografiaParrafos;
+    color: white;
+}
+
+h1 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 75px;
+}
+
+h2 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 36px;
+}
+
+h4 {
+    font-family: $tipografiaParrafos;
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+h5 {
+    font-family: $tipografiaFifa;
+    color: $colorPrincipal; //color: white;
+    font-size: 18px;
+    position: absolute;
+    z-index: 999;
+    margin-top: -68px;
+    margin-left: 81px;
+}
+
+button {
+    background-image: url(../imagenes/juegos/fondoBotonGrande.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    font-family: $tipografiaFifa;
+    color: white;
+    height: 68px;
+    width: 202px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.botonBlanco {
+    background-image: url(../imagenes/juegos/fondoBotonBlancoPeque.png);
+    background-size: cover;
+    font-family: $tipografiaFifa;
+    color: white;
+    height: 57px;
+    width: 166px;
+    border: none;
+}
+
+.masPeque {
+    background-image: url(../imagenes/checkout/botonMasPeque.png);
+    background-size: cover;
+    font-family: $tipografiaFifa;
+    color: white;
+    height: 37px;
+    width: 107px;
+    border: none;
+}
+
+.masGrande {
+    background-image: url(../imagenes/checkout/botonMasGrande.png);
+    background-size: cover;
+    font-family: $tipografiaFifa;
+    font-size: 29px;
+    color: white;
+    height: 111px;
+    width: 329px;
+    border: none;
+}
+
+.input {
+    height: 54px;
+    width: 574px;
+    background-color: rgba($color: white, $alpha: 0.7);
+    font-family: $tipografiaParrafos;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.inputDos {
+    height: 35px;
+    width: 805px;
+    background-color: rgba($color: white, $alpha: 0.7);
+    font-family: $tipografiaParrafos;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 40px 40px 40px 40px;
+}
+
+//header----------------------------------------------------------------------------------------------------------------------------------
+header {
+    background: $colorPrincipal; //width: 1920px;
+}
+
+header li a {
+    font-family: $tipografiaFifa;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+.contenedor {
+    //width: 1709px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    margin-left: $tamanoMargen;
+    margin-right: $tamanoMargen;
+}
+
+// fin header------------------------------------------------------------------------------------------------------------------------------
+// inicio filtros -------------------------------------------------------------------------------------------------------------------------
+.filtros {
+    background-color: #2d2d2d;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    .categoria {
+        margin-left: 106px;
+        margin-right: 83px;
+    }
+    .precio {
+        margin-right: 83px;
+    }
+    .buscar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: center;
+        margin-left: 375px;
+        .input {
+            margin-left: 100px;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .lupa {
+            margin-left: -75px;
+        }
+    }
+}
+
+// fin filtros--------------------------------------------------------------------------------------------------------
+// inicio publicidad -------------------------------------------------------------------------------------------------
+.publicidad {
+    background-image: url(../imagenes/juegos/fondoPublicidad.png);
+    background-size: cover;
+    height: 288px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .contenidoPublicidad {
+        //se agrega fondo negro con opacidad
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        border-radius: 40px 40px 40px 40px;
+        width: 805px;
+        height: 205px;
+        margin-left: 106px;
+        .infoPublicidad {
+            margin-left: 37px;
+            margin-right: 37px;
+            padding-top: 25px;
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    .logoPublicidad {
+        margin-right: 100px;
+    }
+}
+
+// fin publicidad -------------------------------------------------------------------------------------------------
+// inicio juegos1 -------------------------------------------------------------------------------------------------
+.juegos1 {
+    background-image: url(../imagenes/juegos/fondoJuegos1.png);
+    background-size: cover;
+    height: 656px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+// fin juegos1 -------------------------------------------------------------------------------------------------
+// inicio juegos2 -------------------------------------------------------------------------------------------------
+.juegos2 {
+    background-image: url(../imagenes/juegos/fondoJuegos2.png);
+    background-size: cover;
+    height: 652px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+// fin juegos2 -------------------------------------------------------------------------------------------------
+// inicio juegos3 -------------------------------------------------------------------------------------------------
+.juegos3 {
+    background-image: url(../imagenes/juegos/fondoJuegos3.png);
+    background-size: cover;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    .tituloJuegos3 {
+        padding-top: 69px;
+    }
+    .logoJuegos3 {
+        background-image: url(../imagenes/juegos/logoEADiminuto.png);
+        background-size: cover;
+        width: 130px;
+        height: 66px;
+        margin-top: 42px;
+    }
+}
+
+// fin juegos3 -------------------------------------------------------------------------------------------------
+// inicio newsletter -------------------------------------------------------------------------------------------------
+.newsletter {
+    background-image: url(../imagenes/juegos/fondoNewsletter.png);
+    background-size: cover;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .informacionNewsletter {
+        width: 900px;
+        margin-left: $tamanoMargen;
+        .tituloInformacionNewsletter {
+            //empty for now
+        }
+        .parrafoNewsletter {
+            margin-top: 15px;
+            font-size: $tamanoFuente;
+        }
+    }
+    .contactoNewsletter {
+        margin-right: 415px;
+        .informacionContactoNewsletter {
+            width: 600px;
+            .escribirCorreoNewsletter {
+                margin-left: 125px;
+            }
+            .botonNewsletter {
+                margin-top: 25px;
+                margin-left: 320px;
+            }
+        }
+    }
+}
+
+// fin newsletter----------------------------------------------------------------------------------------------------------------------------
+// inicio footer ----------------------------------------------------------------------------------------------------------------------------
+.footer {
+    background-image: url(../imagenes/juegos/fondoFooter.png);
+    background-size: cover;
+    height: 212px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    a {
+        list-style: none;
+        font-family: $tipografiaParrafos;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+    }
+    .infoUno {
+        margin-left: $tamanoMargen;
+        .textoInfoUno {
+            //empty for now
+        }
+        .listaInfoUno {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+                list-style: none;
+            }
+        }
+    }
+    .infoDos {
+        margin-left: 92px;
+        .listaInfoDos {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+    }
+    .siguenos {
+        margin-left: 92px;
+        .textoSiguenos {
+            //empty for now
+        }
+        .listaSiguenos {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+    }
+    .lugares {
+        margin-left: 92px;
+        .textoLugares {
+            //empty for now
+        }
+        .listaLugares {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+    }
+    .logoFooter {
+        background-image: url(../imagenes/juegos/logoEA.png);
+        background-size: cover;
+        height: 43px;
+        width: 274px;
+        margin-left: 605px;
+    }
+}
+
+// fin footer----------------------------------------------------------------------------------------------------------------------------
+// fin pagina principal -----------------------------------------------------------------------------------------------------------------
+// inicio pagina compra -----------------------------------------------------------------------------------------------------------------
+.compra {
+    background-image: url(../imagenes/compra/fondoCompra.png);
+    background-size: cover;
+    height: 689px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+// fin pagina compra -----------------------------------------------------------------------------------------------------------------
+// inicio pagina checkout -----------------------------------------------------------------------------------------------------------------
+// inicio misJuegos ------------------------------------------------------------------------------------------------------------------
+.misJuegos {
+    background-image: url(../imagenes/checkout/fondoMisJuegos.png);
+    background-size: cover;
+    height: 817px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+    .tituloMisJuegos {
+        margin-left: 106px;
+        margin-top: 45px;
+    }
+    .logoMisJuegos {
+        background-image: url(../imagenes/juegos/logoEAGrande.png);
+        background-size: cover;
+        height: 76px;
+        width: 484px;
+        margin-right: 100px;
+        margin-top: 45px;
+    }
+}
+
+// fin misJuegos ------------------------------------------------------------------------------------------------------------------
+// inicio datosUsuario ------------------------------------------------------------------------------------------------------------------
+.datosUsuario {
+    background-image: url(../imagenes/checkout/fondoDatosUsuario.png);
+    background-size: cover;
+    height: 362px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+    .infoUsuario {
+        margin-top: 42px;
+        margin-left: 106px;
+        .datosNombre {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: stretch;
+            align-items: flex-start;
+            margin-top: 42px;
+            .botonNombreUsuario {
+                margin-left: 96px;
+            }
+        }
+        .datosCuentaUsuario {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: stretch;
+            align-items: flex-start;
+            margin-top: 42px;
+            .botonCuentaUsuario {
+                margin-left: 96px;
+            }
+        }
+        .datosTarjetaUsuario {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: stretch;
+            align-items: flex-start;
+            margin-top: 42px;
+            .botonTarjetaUsuario {
+                margin-left: 96px;
+            }
+        }
+    }
+    .botonComprarUsuario {
+        margin-top: 209px;
+        margin-right: 337px;
+    }
+}
+
+// fin datosUsuario ------------------------------------------------------------------------------------------------------------------
