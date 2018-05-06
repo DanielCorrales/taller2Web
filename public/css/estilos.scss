@@ -236,54 +236,59 @@ header li:last-child {
 .juegos1 {
     background-image: url(../imagenes/juegos/fondoJuegos1.png);
     background-size: cover;
-    height: 656px;
+    height: 1920px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-}
-
-// fin juegos1 -------------------------------------------------------------------------------------------------
-// inicio juegos2 -------------------------------------------------------------------------------------------------
-.juegos2 {
-    background-image: url(../imagenes/juegos/fondoJuegos2.png);
-    background-size: cover;
-    height: 652px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-}
-
-// fin juegos2 -------------------------------------------------------------------------------------------------
-// inicio juegos3 -------------------------------------------------------------------------------------------------
-.juegos3 {
-    background-image: url(../imagenes/juegos/fondoJuegos3.png);
-    background-size: cover;
-    height: 880px;
-    display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
     align-items: center;
-    .tituloJuegos3 {
-        padding-top: 69px;
-    }
-    .logoJuegos3 {
-        background-image: url(../imagenes/juegos/logoEADiminuto.png);
-        background-size: cover;
-        width: 130px;
-        height: 66px;
-        margin-top: 42px;
+    .maddenJuegos1 {
+        // margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        margin-top: 50px; //margin-top: 25px;
+        margin-left: 50px;
+        .maquetacionMadden {
+            margin: 0 50px 50px 50px;
+            .imagenDeMadden {
+                -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+            }
+            .logoDeMadden {
+                margin-top: 25px;
+                margin-left: 25px;
+                width: 63px;
+                background-size: cover;
+            }
+            .precioDeMadden {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: center;
+                p {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+            }
+            .botonDeMadden {
+                margin-left: 75px; //margin-bottom: 55px;
+            }
+        }
     }
 }
 
-// fin juegos3 -------------------------------------------------------------------------------------------------
+// fin juegos1 -------------------------------------------------------------------------------------------------
 // inicio newsletter -------------------------------------------------------------------------------------------------
 .newsletter {
     background-image: url(../imagenes/juegos/fondoNewsletter.png);

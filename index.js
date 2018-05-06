@@ -28,10 +28,7 @@ console.log("Escuchando servidor")
 console.log("Escuchando servidor")*/
 
 /*Esta parte es para cargar las paginas*/
-app.get('/', (req, res) => {
-    res.render('index', {
-    });
-})
+
 
 app.get('/compra', (req, res) => {
     res.render('compra', {
@@ -43,7 +40,7 @@ app.get('/checkout', (req, res) => {
     });
 })
 
-app.get('/reco', (req, res) => {
+app.get('/', (req, res) => {
     /*db.collection('productos')
         .find()
         .toArray((err, result) => {
@@ -52,7 +49,7 @@ app.get('/reco', (req, res) => {
             });
         })*/
 
-    var prod = db.collection('juego')
+    var prod = db.collection('juegos')
         .find();
     
     if(req.query.marca)
