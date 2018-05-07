@@ -48,13 +48,54 @@
     <!-- inicio filtros xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <div class="filtros">
         <div class="categoria">
-            <button class="botonBlanco">Categoria</button>
+            <ul class="nav">
+                <li class="contenedorFiltros">
+                    <a class="botonBlanco" href="/">categorias</a>
+                    <ul>
+                        <li>
+                            <a class="botonBlanco" href="/?categoria=lucha">lucha</a>
+                        </li>
+                        <li>
+                            <a class="botonBlanco" href="/?categoria=deportes">deportes</a>
+                        </li>
+                        <li>
+                            <a class="botonBlanco" href="/?categoria=baloncesto">baloncesto</a>
+                        </li>
+                        <li>
+                            <a class="botonBlanco" href="/?categoria=futbol">futbol</a>
+                        </li>
+                        <li>
+                            <a class="botonBlanco" href="/?categoria=disparos">disparos</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="precio">
-            <button class="botonBlanco">Precio</button>
+            <ul class="nav">
+                <li>
+                    <a class="botonBlanco" href="/">Precio</a>
+                    <ul>
+                        <li>
+                            <input type="range" name="" id="slider" min="0" max="100">
+                        </li>
+                        <button class="botonBlanco minMax">Buscar</button>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="lanzamiento">
-            <button class="botonBlanco">Lanzamiento</button>
+            <ul class="nav">
+                <li>
+                    <a class="botonBlanco" href="/">Lanzamiento</a>
+                    <ul>
+                        <li>
+                            <input type="range" name="" id="slider" min="2000" max="2018">
+                        </li>
+                        <button class="botonBlanco minMax">Buscar</button>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="buscar">
             <input type="text" name="busqueda" class="input" placeholder="Buscar">
@@ -99,10 +140,12 @@
                     <div>
                         <h3> Precio</h3>;
                     </div>
-                    <div><p>: ${{precio}}</p></div>
+                    <div>
+                        <p>: ${{precio}}</p>
+                    </div>
                 </div>
                 <div class="botonDeMadden">
-                    <button> Saber Ms </button>
+                    <button> Saber Mas </button>
                 </div>
             </div>
             {{/each}}
@@ -218,5 +261,5 @@
         <div class="logoFooter"></div>
     </div>
     <!-- fin footer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
+<script src="js/recommended.js"></script>
 </body>

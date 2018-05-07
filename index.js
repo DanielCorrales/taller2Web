@@ -52,8 +52,8 @@ app.get('/', (req, res) => {
     var prod = db.collection('juegos')
         .find();
     
-    if(req.query.marca)
-        prod.filter({ marca: req.query.marca });
+    if(req.query.categoria)
+        prod.filter({ categoria: req.query.categoria });
 
     if(req.query.modelo)
         prod.filter({ modelo: req.query.modelo });

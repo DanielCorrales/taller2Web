@@ -172,7 +172,50 @@ header li:last-child {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
-    align-items: center;
+    align-items: center; // desplegar menu ----------------------------------------------------------------------------------------------------------------------
+    ul,
+    ol {
+        list-style: none;
+    }
+    a {
+        margin-top: 15px;
+    }
+    li{
+        margin-bottom: 15px;
+    }
+    .nav>li {
+        float: left;
+    }
+    .nav li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        background-color: #2d2d2d;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+    .nav li a:hover {
+        background-color: #434343;
+    }
+    .nav li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    .nav li:hover>ul {
+        display: block;
+    }
+    .nav li ul li {
+        position: relative;
+    }
+    .nav li ul li ul {
+        right: -140px;
+        top: 0px;
+    } // fin desplegar menu ------------------------------------------------------------------------------------------------------------------
     .categoria {
         margin-left: 106px;
         margin-right: 83px;
@@ -242,15 +285,13 @@ header li:last-child {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
-    align-items: center;
     .maddenJuegos1 {
         // margin-left: 50px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: stretch;
-        align-items: center;
         margin-top: 50px; //margin-top: 25px;
         margin-left: 50px;
         .maquetacionMadden {
