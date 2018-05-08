@@ -6,7 +6,7 @@
             "imagen": "imagenes/juegos/imagenMadden.png",
             "logo": "imagenes/juegos/logoMadden.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2017,
             "peso": "muchas gigas"
         },
         {
@@ -16,7 +16,7 @@
             "imagen": "imagenes/juegos/imagenRory.png",
             "logo": "imagenes/juegos/logoRory.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2015,
             "peso": "muchas gigas"
         },
         {
@@ -26,7 +26,7 @@
             "imagen": "imagenes/juegos/imagenUfc.png",
             "logo": "imagenes/juegos/logoUfc.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2018,
             "peso": "muchas gigas"
         },
         {
@@ -36,7 +36,7 @@
             "imagen": "imagenes/juegos/imagenNba.png",
             "logo": "imagenes/juegos/logoNba.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2017,
             "peso": "muchas gigas"
         },
         {
@@ -46,7 +46,7 @@
             "imagen": "imagenes/juegos/imagenNhl.png",
             "logo": "imagenes/juegos/logoNhl.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2017,
             "peso": "muchas gigas"
         },
         {
@@ -56,7 +56,7 @@
             "imagen": "imagenes/juegos/imagenNcaa.png",
             "logo": "imagenes/juegos/logoNcaa.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2017,
             "peso": "muchas gigas"
         },
         {
@@ -66,7 +66,7 @@
             "imagen": "imagenes/juegos/imagenStreet.png",
             "logo": "imagenes/juegos/logoStreet.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2012,
             "peso": "muchas gigas"
         },
         {
@@ -76,7 +76,7 @@
             "imagen": "imagenes/juegos/imagenFight.png",
             "logo": "imagenes/juegos/logoFight.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2011,
             "peso": "muchas gigas"
         },
         {
@@ -86,7 +86,7 @@
             "imagen": "imagenes/juegos/imagenBattlefront.png",
             "logo": "imagenes/juegos/logoBattlefront.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2017,
             "peso": "muchas gigas"
         },
         {
@@ -96,7 +96,7 @@
             "imagen": "imagenes/juegos/imagenBattlefield.png",
             "logo": "imagenes/juegos/logoBattlefield.png",
             "descripcion": "cualquier descripcion",
-            "estreno": "cualquier dia",
+            "estreno": 2016,
             "peso": "muchas gigas"
         }
     ]

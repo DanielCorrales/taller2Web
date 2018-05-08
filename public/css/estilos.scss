@@ -58,6 +58,11 @@ h5 {
     margin-top: -68px;
     margin-left: 81px;
 }
+h6 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 18px;
+}
 
 button {
     background-image: url(../imagenes/juegos/fondoBotonGrande.png);
@@ -126,7 +131,11 @@ button:hover {
     text-align: center;
     border-radius: 40px 40px 40px 40px;
 }
-
+input[type=range] {
+    width: 140px;
+    margin-top: 5px;
+  //  margin-bottom: -10px;
+}
 //header----------------------------------------------------------------------------------------------------------------------------------
 header {
     background: $colorPrincipal; //width: 1920px;
@@ -173,6 +182,14 @@ header li:last-child {
     justify-content: flex-start;
     align-content: stretch;
     align-items: center; // desplegar menu ----------------------------------------------------------------------------------------------------------------------
+    h6 {
+        margin-left: 75px;
+        margin-bottom: 10px;
+    }
+    .minMax, .minMaxUno{
+        margin-top: -10px;
+        background-color: #2d2d2d;
+    }
     ul,
     ol {
         list-style: none;
@@ -182,6 +199,19 @@ header li:last-child {
     }
     li{
         margin-bottom: 15px;
+    }
+    .infoDeFiltroUno, .infoDeFiltroDos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        margin-left: -25px;
+        p{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
     }
     .nav>li {
         float: left;
@@ -205,6 +235,7 @@ header li:last-child {
         display: none;
         position: absolute;
         min-width: 140px;
+        
     }
     .nav li:hover>ul {
         display: block;
@@ -219,6 +250,7 @@ header li:last-child {
     .categoria {
         margin-left: 106px;
         margin-right: 83px;
+        
     }
     .precio {
         margin-right: 83px;
@@ -316,7 +348,7 @@ header li:last-child {
                 align-items: center;
                 p {
                     font-size: 30px;
-                    margin-bottom: 20px;
+                    //margin-bottom: 20px;
                 }
                 h3 {
                     font-size: 30px;
@@ -324,6 +356,7 @@ header li:last-child {
             }
             .botonDeMadden {
                 margin-left: 75px; //margin-bottom: 55px;
+                margin-top: 25px;
             }
         }
     }

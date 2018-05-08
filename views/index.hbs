@@ -76,9 +76,14 @@
                 <li>
                     <a class="botonBlanco" href="/">Precio</a>
                     <ul>
-                        <li>
-                            <input type="range" name="" id="slider" min="0" max="100">
+                        <li class="infoDeFiltroUno">
+                            <p>$0</p>
+                            <input type="range" name="" id="slider" min="0" max="59">
+                            <p>$60</p>
                         </li>
+                        <h6>
+                            <span id="demo"></span>
+                        </h6>
                         <button class="botonBlanco minMax">Buscar</button>
                     </ul>
                 </li>
@@ -89,10 +94,15 @@
                 <li>
                     <a class="botonBlanco" href="/">Lanzamiento</a>
                     <ul>
-                        <li>
-                            <input type="range" name="" id="slider" min="2000" max="2018">
+                        <li class="infoDeFiltroDos">
+                            <p>2000</p>
+                            <input type="range" name="" id="sliderUno" min="2000" max="2018">
+                            <p>2018</p>
                         </li>
-                        <button class="botonBlanco minMax">Buscar</button>
+                        <h6>
+                            <span id="demoDos"></span>
+                        </h6>
+                        <button class="botonBlanco minMaxUno">Buscar</button>
                     </ul>
                 </li>
             </ul>
@@ -138,7 +148,7 @@
                 </div>
                 <div class="precioDeMadden">
                     <div>
-                        <h3> Precio</h3>;
+                        <h3> Precio</h3>
                     </div>
                     <div>
                         <p>: ${{precio}}</p>
@@ -150,9 +160,6 @@
             </div>
             {{/each}}
         </div>
-        <div class="golfJuegos1"></div>
-        <div class="ufcJuegos1"></div>
-        <div class="nbaJuegos1"></div>
     </div>
     <!-- fin juegos1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
@@ -261,5 +268,5 @@
         <div class="logoFooter"></div>
     </div>
     <!-- fin footer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-<script src="js/recommended.js"></script>
+    <script src="js/recommended.js"></script>
 </body>

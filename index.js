@@ -1,9 +1,9 @@
 const MongoClient = require('mongodb').MongoClient,
-express = require('express'),
-engines = require('consolidate');
+    express = require('express'),
+    engines = require('consolidate');
 
 var app = express(),
-db;
+    db;
 
 app.engine('hbs', engines.handlebars);
 
@@ -14,13 +14,13 @@ app.use(express.static('public'));
 
 // Conectarse a Base de Datos
 MongoClient.connect('mongodb://localhost:27017', function (err, client) {
-if (err) throw err;
+    if (err) throw err;
 
-db = client.db('juegos');
+    db = client.db('juegos');
 
-// Iniciar servidor
-app.listen(5000);
-console.log("Escuchando servidor")
+    // Iniciar servidor
+    app.listen(5000);
+    console.log("Escuchando servidor")
 });
 
 // Iniciar servidor
@@ -31,13 +31,11 @@ console.log("Escuchando servidor")*/
 
 
 app.get('/compra', (req, res) => {
-    res.render('compra', {
-    });
+    res.render('compra', {});
 })
 
 app.get('/checkout', (req, res) => {
-    res.render('checkout', {
-    });
+    res.render('checkout', {});
 })
 
 app.get('/', (req, res) => {
@@ -49,30 +47,44 @@ app.get('/', (req, res) => {
             });
         })*/
 
-    var prod = db.collection('juegos')
+    var prod = db.collection('juegos') 
         .find();
-    
-    if(req.query.categoria)
-        prod.filter({ categoria: req.query.categoria });
 
-    if(req.query.modelo)
-        prod.filter({ modelo: req.query.modelo });
+    if (req.query.categoria)
+        prod.filter({
+            categoria: req.query.categoria
+        });
+        
+    if (req.query.min)
+        prod.filter({
+            precio: {
+                $gte: parseInt(req.query.min)
+            }
+        });
+
+        if (req.query.minUno)
+        prod.filter({
+            estreno: {
+                $gte: parseInt(req.query.minUno)
+            }
+        });
 
     prod.toArray((err, result) => {
         console.log(result);
-            res.render('index', {
-                juego: result
-            });
-        })
+        res.render('index', {
+            juego: result
+        });
+    })
 });
 
 
 app.get('/contact', (req, res) => {
-    res.render('contact', {
-    });
+    res.render('contact', {});
 })
 
 /*Preguntar para que es esto*/
 app.get('/producto/:id', (req, res) => {
-    db.collection('libros').find({ modelo: req.params.id }).toArray((err, result) => res.send(result))
+    db.collection('libros').find({
+        modelo: req.params.id
+    }).toArray((err, result) => res.send(result))
 })
