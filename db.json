@@ -15,7 +15,7 @@
             "categoria": "deportes",
             "imagen": "imagenes/juegos/imagenRory.png",
             "logo": "imagenes/juegos/logoRory.png",
-            "descripcion": "el juego recibió críticas mixtas; aunque los críticos reconocieron la mayor calidad gráfica y realismo del juego en las entregas anteriores de la franquicia, el juego fue criticado principalmente por sus regresiones sobre entradas anteriores en la franquicia.",
+            "descripcion": "El juego recibió críticas mixtas; aunque los críticos reconocieron la mayor calidad gráfica y realismo del juego en las entregas anteriores de la franquicia, el juego fue criticado principalmente por sus regresiones sobre entradas anteriores en la franquicia.",
             "estreno": 2015,
             "peso": "25 gigas"
         },
@@ -25,7 +25,7 @@
             "categoria": "lucha",
             "imagen": "imagenes/juegos/imagenUfc.png",
             "logo": "imagenes/juegos/logoUfc.png",
-            "descripcion": "es un videojuego de artes marciales mixtas desarrollado por Electronic Arts.  Se basa en la marca Ultimate Fighting Championship (UFC) y fue lanzado el 2 de febrero de 2018 a nivel mundial.",
+            "descripcion": "Es un videojuego de artes marciales mixtas desarrollado por Electronic Arts.  Se basa en la marca Ultimate Fighting Championship (UFC) y fue lanzado el 2 de febrero de 2018 a nivel mundial.",
             "estreno": 2018,
             "peso": "35 gigas"
         },
@@ -35,7 +35,7 @@
             "categoria": "baloncesto",
             "imagen": "imagenes/juegos/imagenNba.png",
             "logo": "imagenes/juegos/logoNba.png",
-            "descripcion": "Es un videojuego de simulación de baloncesto desarrollado por EA Tiburon y publicado por EA Sports. Cuenta con James Harden de los Houston Rockets como su atleta de cubierta",
+            "descripcion": "Es un videojuego de simulación de baloncesto desarrollado por EA Tiburon y distribuido por EA Sports. Cuenta con James Harden de los Houston Rockets como su atleta de cubierta en dos facetas.",
             "estreno": 2017,
             "peso": "35 gigas"
         },
@@ -85,7 +85,7 @@
             "categoria": "disparos",
             "imagen": "imagenes/juegos/imagenBattlefront.png",
             "logo": "imagenes/juegos/logoBattlefront.png",
-            "descripcion": "Es un videojuego de disparos en primera persona, el cual tiene lugar en el universo de Star Wars. Es la secuela del videojuego Star Wars: Battlefront del año 2015. Fue desarrollado por EA DICE, en colaboración con Criterion Games y Motive Studios y publicado por Electronic Arts.",
+            "descripcion": "Es un videojuego de disparos en primera persona, el cual tiene lugar en el universo de Star Wars. Es la secuela del videojuego Star Wars: Battlefront del año 2015. Fue desarrollado por EA DICE, en colaboración con Criterion Games y Motive Studios.",
             "estreno": 2017,
             "peso": "60 gigas"
         },
@@ -95,7 +95,7 @@
             "categoria": "disparos",
             "imagen": "imagenes/juegos/imagenBattlefield.png",
             "logo": "imagenes/juegos/logoBattlefield.png",
-            "descripcion": "Es un videojuego de disparos y acción bélica en primera persona. El título fue desarrollado por DICE y distribuido mundialmente por Electronic Arts. Es el décimo quinto juego de la serie Battlefield y el primer título de la serie que se ambienta en la Primera Guerra Mundial por Electronic Arts desde Wings of Glory en 1994.",
+            "descripcion": "Es un videojuego de disparos y acción bélica en primera persona. Desarrollado por DICE y distribuido mundialmente por Electronic Arts. Es el décimo quinto juego de la serie Battlefield y el primer título de la serie que se ambienta en la Primera Guerra Mundial.",
             "estreno": 2016,
             "peso": "40 gigas"
         }

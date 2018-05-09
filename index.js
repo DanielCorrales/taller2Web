@@ -36,14 +36,14 @@ app.get('/checkout', (req, res) => {
 
 app.get('/', (req, res) => {
 
-    var prod = db.collection('juegos') 
+    var prod = db.collection('juegos')
         .find();
 
     if (req.query.categoria)
         prod.filter({
             categoria: req.query.categoria
         });
-        
+
     if (req.query.min)
         prod.filter({
             precio: {
@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
             }
         });
 
-        if (req.query.minUno)
+    if (req.query.minUno)
         prod.filter({
             estreno: {
                 $gte: parseInt(req.query.minUno)
@@ -72,8 +72,21 @@ app.get('/contact', (req, res) => {
 })
 
 /*Preguntar para que es esto*/
-app.get('/producto/:id', (req, res) => {
+/*app.get('/producto/:id', (req, res) => {
     db.collection('libros').find({
         modelo: req.params.id
     }).toArray((err, result) => res.send(result))
 })
+*/
+app.get('/compra/:nombre', (req, res) => {
+    db.collection('juegos').find({
+        nombre: req.params.nombre
+    }).toArray((err, result) => {
+        console.log(result)
+            res.render('compra', {
+                jueguito: result[0]
+
+            })
+        })
+    
+});

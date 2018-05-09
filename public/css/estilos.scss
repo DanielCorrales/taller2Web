@@ -58,6 +58,7 @@ h5 {
     margin-top: -68px;
     margin-left: 81px;
 }
+
 h6 {
     font-family: $tipografiaFifa;
     color: white;
@@ -131,11 +132,12 @@ button:hover {
     text-align: center;
     border-radius: 40px 40px 40px 40px;
 }
+
 input[type=range] {
     width: 140px;
-    margin-top: 5px;
-  //  margin-bottom: -10px;
+    margin-top: 5px; //  margin-bottom: -10px;
 }
+
 //header----------------------------------------------------------------------------------------------------------------------------------
 header {
     background: $colorPrincipal; //width: 1920px;
@@ -186,7 +188,8 @@ header li:last-child {
         margin-left: 75px;
         margin-bottom: 10px;
     }
-    .minMax, .minMaxUno{
+    .minMax,
+    .minMaxUno {
         margin-top: -10px;
         background-color: #2d2d2d;
     }
@@ -197,10 +200,11 @@ header li:last-child {
     a {
         margin-top: 15px;
     }
-    li{
+    li {
         margin-bottom: 15px;
     }
-    .infoDeFiltroUno, .infoDeFiltroDos{
+    .infoDeFiltroUno,
+    .infoDeFiltroDos {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -208,7 +212,7 @@ header li:last-child {
         align-content: stretch;
         align-items: center;
         margin-left: -25px;
-        p{
+        p {
             margin-right: 10px;
             margin-left: 10px;
         }
@@ -235,7 +239,6 @@ header li:last-child {
         display: none;
         position: absolute;
         min-width: 140px;
-        
     }
     .nav li:hover>ul {
         display: block;
@@ -250,7 +253,6 @@ header li:last-child {
     .categoria {
         margin-left: 106px;
         margin-right: 83px;
-        
     }
     .precio {
         margin-right: 83px;
@@ -347,8 +349,7 @@ header li:last-child {
                 align-content: stretch;
                 align-items: center;
                 p {
-                    font-size: 30px;
-                    //margin-bottom: 20px;
+                    font-size: 30px; //margin-bottom: 20px;
                 }
                 h3 {
                     font-size: 30px;
@@ -504,6 +505,85 @@ header li:last-child {
     justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start;
+    .imagenDeJuego {
+        margin: 100px 100px 0 100px;
+        align-items: center;
+        .imagenDeMadden {
+            -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+        }
+        .logoDeMadden {
+            margin-left: 20px;
+            margin-top: 60px;
+        }
+    }
+    .infoDeJuego {
+        margin-top: 100px;
+        .nombreDeJuego {
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
+        .fondoDeInfoJuegos {
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            border-radius: 40px 40px 40px 40px;
+            width: 805px;
+            height: 300px;
+            .tamanoDeInfoJuegos {
+                width: 770px;
+                height: 300px;
+                margin-left: 20px;
+                padding-top: 15px;
+                .caracteristicaDeJuego {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .precioDeMadden {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: stretch;
+                    align-items: flex-start;
+                    p {
+                        font-size: 43px;
+                        margin-top: -18px;
+                    }
+                }
+                .fechaDeEstreno {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: stretch;
+                    align-items: flex-start;
+                    p {
+                        font-size: 43px;
+                        margin-top: -18px;
+                    }
+                }
+                .peso {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: stretch;
+                    align-items: flex-start;
+                    p {
+                        font-size: 43px;
+                        margin-top: -18px;
+                    }
+                }
+            }
+        }
+    }
+    .botonComprarJuego {
+        margin-top: 280px;
+        margin-left: 40px;
+        margin-right: 100px;
+    }
 }
 
 // fin pagina compra -----------------------------------------------------------------------------------------------------------------
