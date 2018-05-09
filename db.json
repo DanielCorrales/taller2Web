@@ -5,9 +5,9 @@
             "categoria": "deportes",
             "imagen": "imagenes/juegos/imagenMadden.png",
             "logo": "imagenes/juegos/logoMadden.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Su nombre hace honor a John Madden, comentarista de NBC Sports y ganador del Super Bowl como entrenador de los Oakland Raiders en 1977. Éste es uno de los primeros títulos de deportes en videojuegos, y lógicamente uno de los más populares de la historia.",
             "estreno": 2017,
-            "peso": "muchas gigas"
+            "peso": "40 gigas"
         },
         {
             "nombre": "rory mcilroy pga tours",
@@ -15,9 +15,9 @@
             "categoria": "deportes",
             "imagen": "imagenes/juegos/imagenRory.png",
             "logo": "imagenes/juegos/logoRory.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "el juego recibió críticas mixtas; aunque los críticos reconocieron la mayor calidad gráfica y realismo del juego en las entregas anteriores de la franquicia, el juego fue criticado principalmente por sus regresiones sobre entradas anteriores en la franquicia.",
             "estreno": 2015,
-            "peso": "muchas gigas"
+            "peso": "25 gigas"
         },
         {
             "nombre": "ufc 3",
@@ -25,9 +25,9 @@
             "categoria": "lucha",
             "imagen": "imagenes/juegos/imagenUfc.png",
             "logo": "imagenes/juegos/logoUfc.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "es un videojuego de artes marciales mixtas desarrollado por Electronic Arts.  Se basa en la marca Ultimate Fighting Championship (UFC) y fue lanzado el 2 de febrero de 2018 a nivel mundial.",
             "estreno": 2018,
-            "peso": "muchas gigas"
+            "peso": "35 gigas"
         },
         {
             "nombre": "nba live 18",
@@ -35,9 +35,9 @@
             "categoria": "baloncesto",
             "imagen": "imagenes/juegos/imagenNba.png",
             "logo": "imagenes/juegos/logoNba.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es un videojuego de simulación de baloncesto desarrollado por EA Tiburon y publicado por EA Sports. Cuenta con James Harden de los Houston Rockets como su atleta de cubierta",
             "estreno": 2017,
-            "peso": "muchas gigas"
+            "peso": "35 gigas"
         },
         {
             "nombre": "nhl 18",
@@ -45,9 +45,9 @@
             "categoria": "deportes",
             "imagen": "imagenes/juegos/imagenNhl.png",
             "logo": "imagenes/juegos/logoNhl.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es un videojuego de simulación de hockey sobre hielo desarrollado por EA Canada y publicado por EA Sports. Es la vigesimosegunda entrega de la serie de videojuegos NHL y presenta al capitán de Edmonton Oilers Connor McDavid en la portada.",
             "estreno": 2017,
-            "peso": "muchas gigas"
+            "peso": "38 gigas"
         },
         {
             "nombre": "ncaa",
@@ -55,9 +55,9 @@
             "categoria": "futbol",
             "imagen": "imagenes/juegos/imagenNcaa.png",
             "logo": "imagenes/juegos/logoNcaa.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es una serie de videojuegos de fútbol americano desarrollada por EA Sports en la que los jugadores controlan y compiten contra los actuales equipos universitarios de la División I de FBS. La serie es un hermano menor de la serie Madden NFL.",
             "estreno": 2017,
-            "peso": "muchas gigas"
+            "peso": "30 gigas"
         },
         {
             "nombre": "fifa street",
@@ -65,9 +65,9 @@
             "categoria": "futbol",
             "imagen": "imagenes/juegos/imagenStreet.png",
             "logo": "imagenes/juegos/logoStreet.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es la cuarta entrega de la serie de videojuegos FIFA Street de EA Sports. Desarrollado por EA Canada por primera vez y publicado por Electronic Arts en todo el mundo bajo el sello EA Sports en marzo de 2012.",
             "estreno": 2012,
-            "peso": "muchas gigas"
+            "peso": "25 gigas"
         },
         {
             "nombre": "fight night champion",
@@ -75,9 +75,9 @@
             "categoria": "lucha",
             "imagen": "imagenes/juegos/imagenFight.png",
             "logo": "imagenes/juegos/logoFight.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es un videojuego de boxeo desarrollado por EA Sports, la quinta parte de la serie de juegos de simulación de boxeo Fight Night. Entre la lista de boxeadores para jugar se encuentran actuales, así como también boxeadores retirados y de otras épocas.",
             "estreno": 2011,
-            "peso": "muchas gigas"
+            "peso": "28 gigas"
         },
         {
             "nombre": "star wars battlefront 2",
@@ -85,9 +85,9 @@
             "categoria": "disparos",
             "imagen": "imagenes/juegos/imagenBattlefront.png",
             "logo": "imagenes/juegos/logoBattlefront.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es un videojuego de disparos en primera persona, el cual tiene lugar en el universo de Star Wars. Es la secuela del videojuego Star Wars: Battlefront del año 2015. Fue desarrollado por EA DICE, en colaboración con Criterion Games y Motive Studios y publicado por Electronic Arts.",
             "estreno": 2017,
-            "peso": "muchas gigas"
+            "peso": "60 gigas"
         },
         {
             "nombre": "battlefield 1",
@@ -95,9 +95,9 @@
             "categoria": "disparos",
             "imagen": "imagenes/juegos/imagenBattlefield.png",
             "logo": "imagenes/juegos/logoBattlefield.png",
-            "descripcion": "cualquier descripcion",
+            "descripcion": "Es un videojuego de disparos y acción bélica en primera persona. El título fue desarrollado por DICE y distribuido mundialmente por Electronic Arts. Es el décimo quinto juego de la serie Battlefield y el primer título de la serie que se ambienta en la Primera Guerra Mundial por Electronic Arts desde Wings of Glory en 1994.",
             "estreno": 2016,
-            "peso": "muchas gigas"
+            "peso": "40 gigas"
         }
     ]
 }

@@ -23,10 +23,6 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     console.log("Escuchando servidor")
 });
 
-// Iniciar servidor
-/*app.listen(5000);
-console.log("Escuchando servidor")*/
-
 /*Esta parte es para cargar las paginas*/
 
 
@@ -39,13 +35,6 @@ app.get('/checkout', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    /*db.collection('productos')
-        .find()
-        .toArray((err, result) => {
-            res.render('index', {
-                productos: result
-            });
-        })*/
 
     var prod = db.collection('juegos') 
         .find();
