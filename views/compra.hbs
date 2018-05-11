@@ -12,7 +12,9 @@
     <header>
         <div class="contenedor">
             <div class="logoUno">
-                <img src="/imagenes/juegos/logoEA2.png" alt="">
+                <a href="/">
+                    <img src="/imagenes/juegos/logoEA2.png" alt="">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -37,7 +39,15 @@
                 </ul>
             </nav>
             <div class="boton">
-                <button>Comprar Ahora</button>
+                <a href="/checkout">
+                    <button>Comprar Ahora</button>
+                </a>
+            </div>
+            <div class="carrito">
+                <img src="/imagenes/checkout/carrito.png" alt="">
+                <h5>
+                    <span class="carri">0</span>
+                </h5>
             </div>
             <div class="logoDos">
                 <img src="/imagenes/juegos/logoEA.png" alt="">
@@ -78,7 +88,7 @@
         </div>
         <!-- informacion de juego xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
         <div class="infoDeJuego">
-            <div class="nombreDeJuego">
+            <div class="nombreDeJuego" data-id="{{this._id}}">
                 <div>
                     <h2>${{jueguito.nombre}}</h2>
                 </div>
@@ -118,7 +128,9 @@
             </div>
         </div>
         <div class="botonComprarJuego">
-            <button>Comprar Ahora</button>
+            <a href="/checkout">
+                <button class="agregar">Comprar Ahora</button>
+            </a>
         </div>
     </div>
     <!-- inicio newsletter xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
@@ -226,4 +238,6 @@
         <div class="logoFooter"></div>
     </div>
     <!-- fin footer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <script src="/js/carrito.js"></script>
+    <script src="/js/games.js"></script>
 </body>

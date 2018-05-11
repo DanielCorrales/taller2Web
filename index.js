@@ -23,8 +23,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     console.log("Escuchando servidor")
 });
 
-/*Esta parte es para cargar las paginas*/
-
+/*Cargar paginas*/
 
 app.get('/compra', (req, res) => {
     res.render('compra', {});
@@ -71,22 +70,25 @@ app.get('/contact', (req, res) => {
     res.render('contact', {});
 })
 
-/*Preguntar para que es esto*/
-/*app.get('/producto/:id', (req, res) => {
-    db.collection('libros').find({
-        modelo: req.params.id
-    }).toArray((err, result) => res.send(result))
-})
-*/
 app.get('/compra/:nombre', (req, res) => {
     db.collection('juegos').find({
         nombre: req.params.nombre
     }).toArray((err, result) => {
-        console.log(result)
-            res.render('compra', {
-                jueguito: result[0]
+        res.render('compra', {
+            jueguito: result[0]
 
-            })
         })
-    
+    })
+});
+
+app.get('/productosPorId', (req, res) => {
+    var arreglo = req.query.id.split(',');
+    arreglo = arreglo.map(function(id) {
+        return new ObjectID(id);
+    });
+    var prod = db.collection('juegos')
+        .find({ _id: { $in: arreglo } })
+        .toArray((err, result) => {
+            res.send(result);
+        });
 });

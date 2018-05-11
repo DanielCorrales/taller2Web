@@ -12,7 +12,9 @@
     <header>
         <div class="contenedor">
             <div class="logoUno">
-                <img src="imagenes/juegos/logoEA2.png" alt="">
+                <a href="/">
+                    <img src="imagenes/juegos/logoEA2.png" alt="">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -37,7 +39,16 @@
                 </ul>
             </nav>
             <div class="boton">
-                <button>Comprar Ahora</button>
+                <a href="/checkout">
+                    <button>Mi Carrito</button>
+                </a>
+
+            </div>
+            <div class="carrito">
+                <img src="imagenes/checkout/carrito.png" alt="">
+                <h5>
+                    <span class="carri">0</span>
+                </h5>
             </div>
             <div class="logoDos">
                 <img src="imagenes/juegos/logoEA.png" alt="">
@@ -133,7 +144,7 @@
     <div class="juegos1">
         <div class="maddenJuegos1">
             {{#each juego}}
-            <div class="maquetacionMadden">
+            <div class="maquetacionMadden" data-id="{{this._id}}">
                 <div class="imagenDeMadden">
                     <div style="background-image: url({{imagen}});
                             height: 349px;
@@ -155,8 +166,12 @@
                     </div>
                 </div>
                 <div class="botonDeMadden">
-                   <a href="/compra/{{nombre}}"> <button> Saber Mas </button> </a>
+                    <a href="/compra/{{nombre}}">
+                        <button> Saber Mas </button>
+                    </a>
+                    <button class="agregar">comprar ahora</button>
                 </div>
+
             </div>
             {{/each}}
         </div>
@@ -269,4 +284,6 @@
     </div>
     <!-- fin footer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <script src="js/recommended.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/games.js"></script>
 </body>
