@@ -33,3 +33,7 @@ sliderTres.oninput = function () {
     outputTres.innerHTML = this.value;
     mov = this.value;
 }
+
+function myFunction() {
+    alert("Juego agregado al carrito");
+}
