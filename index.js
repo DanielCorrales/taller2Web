@@ -24,7 +24,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     console.log("Escuchando servidor")
 });
 
-/*Cargar paginas*/
+//Cargar paginas
 
 app.get('/compra', (req, res) => {
     res.render('compra', {});
@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact', {});
 })
-
+// obtiene nombre y manda a pagina compra
 app.get('/compra/:nombre', (req, res) => {
     db.collection('juegos').find({
         nombre: req.params.nombre
@@ -81,7 +81,7 @@ app.get('/compra/:nombre', (req, res) => {
         })
     })
 });
-
+//envia el arreglo a la pagina de checkout
 app.get('/productosPorId', (req, res) => {
     var arreglo = req.query.id.split(',');
     arreglo = arreglo.map(function(id) {

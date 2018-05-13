@@ -173,6 +173,12 @@ header li:last-child {
     margin-right: $tamanoMargen;
 }
 
+.carrito{
+    .carri {
+        margin-left: -1.5px;
+    }
+}
+
 // fin header------------------------------------------------------------------------------------------------------------------------------
 // inicio filtros -------------------------------------------------------------------------------------------------------------------------
 .filtros {
@@ -596,24 +602,58 @@ header li:last-child {
 .misJuegos {
     background-image: url(../imagenes/checkout/fondoMisJuegos.png);
     background-size: cover;
-    height: 817px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: flex-start;
-    .tituloMisJuegos {
-        margin-left: 106px;
-        margin-top: 45px;
+    height: 880px;
+    .infoMisJuegos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: flex-start;
+        .tituloMisJuegos {
+            margin-left: 106px;
+            margin-top: 45px;
+        }
+        .logoMisJuegos {
+            background-image: url(../imagenes/juegos/logoEAGrande.png);
+            background-size: cover;
+            height: 76px;
+            width: 484px;
+            margin-right: 100px;
+            margin-top: 45px;
+        }
     }
-    .logoMisJuegos {
-        background-image: url(../imagenes/juegos/logoEAGrande.png);
-        background-size: cover;
-        height: 76px;
-        width: 484px;
-        margin-right: 100px;
-        margin-top: 45px;
+    .imagenesDeJuegosEnCarrito {
+        ul {
+            width: 1700px;
+            margin-left: 100px;
+            list-style: none;
+            font-size: 32px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: center;
+            .claseLi {
+                width: 260px;
+                margin-right: 80px;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: center;
+                .imagenDeCarrito {
+                    width: 260px;
+                }
+                .logoDeCarrito{
+                    margin-top: 25px;
+                }
+            }
+        }
     }
 }
 

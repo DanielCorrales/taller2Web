@@ -1,5 +1,4 @@
 // carrito
-
 document.querySelectorAll('.agregar').forEach(function (button) {
     button.addEventListener('click', function () {
         var id = button.parentNode.parentNode.getAttribute('data-id');

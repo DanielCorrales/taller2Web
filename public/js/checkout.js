@@ -1,3 +1,5 @@
+// manda variables a carrito para mostrar esa imagen
+
 console.log(arreglo);
 
 fetch('http://localhost:5000/productosPorId?id='+arreglo)
@@ -10,6 +12,6 @@ fetch('http://localhost:5000/productosPorId?id='+arreglo)
 
     var lista = document.querySelector('.lista');
     res.forEach(function(elem){
-        lista.innerHTML += '<li><img width="100" src="'+elem.imagen+'">' + elem.nombre + '</li>';
+        lista.innerHTML += '<li class="claseLi"><img class="imagenDeCarrito" width="260" src="'+elem.imagen+'">' + '<img class="logoDeCarrito"width= "186" src="'+elem.logo+'">' + '</li>';
     });
 });

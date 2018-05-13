@@ -13,7 +13,7 @@ document.querySelector('.minMaxUno').addEventListener('click', function (e) {
     e.preventDefault();
     location.href = '/?minUno=' + sliderUno.value;
 });
-
+//actualiza el numero cada que se mueve el slide
 var mov;
 
 var sliderDos = document.getElementById("slider");
@@ -33,7 +33,7 @@ sliderTres.oninput = function () {
     outputTres.innerHTML = this.value;
     mov = this.value;
 }
-
+//agrega alert
 function myFunction() {
     alert("Juego agregado al carrito");
 }
