@@ -15,3 +15,13 @@ fetch('http://localhost:5000/productosPorId?id='+arreglo)
         lista.innerHTML += '<li class="claseLi"><img class="imagenDeCarrito" width="260" src="'+elem.imagen+'">' + '<img class="logoDeCarrito"width= "186" src="'+elem.logo+'">' + '</li>';
     });
 });
+
+//Uso del SweetAlert
+document.getElementById('botonComprar').addEventListener('click', tomarDatos);
+
+function tomarDatos(e) {
+    e.preventDefault();
+
+    var mail = document.getElementById('cuadro').value;
+    swal("Gracias por comprar", "Disfruta de tus juegos, " + mail, "success");
+}
