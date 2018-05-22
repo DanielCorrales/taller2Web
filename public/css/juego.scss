@@ -49,6 +49,12 @@ h4 {
     font-weight: 800;
 }
 
+h5 {
+    font-family: $tipografiaFifa;
+    color: $colorPrincipal;
+    font-size: 30px;
+}
+
 button {
     background-image: url(/imagenes/paginaPrincipal/fondoBotonGrande.png);
     background-size: cover;
@@ -493,6 +499,176 @@ header li:last-child {
 }
 
 //fin interaccion----------------------------------------------------------------------------------------------------------------------------
+// inicio interaccion Dos -------------------------------------------------------------------------------------------------------------------
+.interaccionDos {
+    background-image: url(/imagenes/paginaPrincipal/fondoInteraccionDos.png);
+    background-size: cover;
+    height: 1399px;
+    .tituloInteraccionDos {
+        padding-top: 45px;
+        margin-left: $tamanoMargen;
+        margin-bottom: 45px;
+    }
+    .contenidoInteraccionDos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: center;
+        .equipos {
+            width: 830px;
+            height: 861px;
+            background-color: #ededef;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: center;
+            .izquierda {
+                .equipoUno {
+                    .atletico {
+                        background-image: url(/imagenes/paginaPrincipal/atletico.png);
+                        width: 151px;
+                        height: 192px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        margin-top: 25px;
+                    }
+                    h5 {
+                        margin-left: $tamanoMargen;
+                    }
+                }
+                .equipoDos {
+                    .barcelona {
+                        background-image: url(/imagenes/paginaPrincipal/barcelona.png);
+                        width: 151px;
+                        height: 153px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        margin-top: 25px;
+                    }
+                    h5 {
+                        margin-left: 155px;
+                    }
+                }
+                .equipoTres {
+                    .chelsea {
+                        background-image: url(/imagenes/paginaPrincipal/chelsea.png);
+                        width: 151px;
+                        height: 151px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        margin-top: 25px;
+                    }
+                    h5 {
+                        margin-left: 170px;
+                    }
+                }
+            }
+            .derecha {
+                .equipoCuatro {
+                    .madrid {
+                        background-image: url(/imagenes/paginaPrincipal/madrid.png);
+                        width: 151px;
+                        height: 210px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        margin-top: 25px;
+                    }
+                    h5 {
+                        margin-left: 145px;
+                    }
+                }
+                .equipoCinco {
+                    .manchester {
+                        background-image: url(/imagenes/paginaPrincipal/manchester.png);
+                        width: 151px;
+                        height: 153px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        margin-top: 25px;
+                    }
+                    h5 {
+                        margin-left: 100px;
+                    }
+                }
+                .equipoSeis {
+                    .psg {
+                        background-image: url(/imagenes/paginaPrincipal/psg.png);
+                        width: 151px;
+                        height: 151px;
+                        margin-left: 160px;
+                        margin-bottom: 10px;
+                        margin-top: 25px;
+                    }
+                    h5 {
+                        margin-left: 95px;
+                    }
+                }
+            }
+        }
+    }
+    .formulario {
+        background-image: url(../imagenes/checkout/fondoDatosUsuario.png);
+        background-size: cover;
+        height: 362px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: flex-start;
+        .infoUsuario {
+            margin-top: 42px;
+            margin-left: 106px;
+            input {
+                height: 35px;
+                width: 805px;
+                background-color: rgba($color: white, $alpha: 0.7);
+                font-family: $tipografiaParrafos;
+                font-size: 16px;
+                font-weight: 100;
+                text-align: center;
+                border-radius: 40px 40px 40px 40px;
+            }
+            .datosNombre {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-content: stretch;
+                align-items: flex-start;
+                margin-top: 42px;
+            }
+            .datosCuentaUsuario {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-content: stretch;
+                align-items: flex-start;
+                margin-top: 42px;
+            }
+            .datosTarjetaUsuario {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-content: stretch;
+                align-items: flex-start;
+                margin-top: 42px;
+            }
+        }
+        .botonComprarUsuario {
+            margin-top: 209px;
+            margin-right: 337px;
+        }
+    }
+}
+
+// fin interaccion Dos ----------------------------------------------------------------------------------------------------------------------
 //inicio galerias----------------------------------------------------------------------------------------------------------------------------
 .galerias {
     background-image: url(/imagenes/paginaPrincipal/fondoGalerias.png);
