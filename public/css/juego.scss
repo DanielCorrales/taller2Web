@@ -1,0 +1,1600 @@
+//importo tipografias locales, no esta en googleFonts
+@font-face {
+    font-family: EASPORTS15;
+    src: url(/ea_font/EASPORTS15.ttf);
+}
+
+//importo tipografia de googleFonts
+@import url('https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,600,700');
+//colores
+$colorPrincipal: #221d53;
+//tipografias
+$tipografiaFifa: EASPORTS15;
+$tipografiaParrafos:Mukta Mahee;
+//definiciones globales
+$tamanoFuente: 28px;
+$tamanoMargen: 100px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: $tipografiaParrafos;
+    color: white;
+}
+
+h1 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 75px;
+}
+
+h2 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 48px;
+}
+
+h3 {
+    font-family: $tipografiaFifa;
+    color: white;
+    font-size: 36px;
+}
+
+h4 {
+    font-family: $tipografiaParrafos;
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+button {
+    background-image: url(/imagenes/paginaPrincipal/fondoBotonGrande.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    font-family: $tipografiaFifa;
+    color: white;
+    height: 68px;
+    width: 202px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.peque {
+    background-image: url(/imagenes/paginaPrincipal/fondoBotonPeque.png);
+    background-size: cover;
+    font-family: $tipografiaFifa;
+    color: white;
+    height: 57px;
+    width: 166px;
+    border: none;
+}
+
+.botonBlanco {
+    background-image: url(/imagenes/paginaPrincipal/fondoBotonBlancoPeque.png);
+    background-size: cover;
+    font-family: $tipografiaFifa;
+    color: white;
+    height: 57px;
+    width: 166px;
+    border: none;
+}
+
+.botonBlancoGrande {
+    background-image: url(/imagenes/paginaPrincipal/fondoBotonBlancoGrande.png);
+    margin-left: 68px;
+}
+
+.input {
+    height: 68px;
+    width: 574px;
+    background-color: rgba($color: white, $alpha: 0.7);
+    font-family: $tipografiaParrafos;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 40px 40px 40px 40px;
+}
+
+//header----------------------------------------------------------------------------------------------------------------------------------
+header {
+    background: $colorPrincipal; //width: 1920px;
+}
+
+header li a {
+    font-family: $tipografiaFifa;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+.contenedor {
+    //width: 1709px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    margin-left: $tamanoMargen;
+    margin-right: $tamanoMargen;
+}
+
+// fin header------------------------------------------------------------------------------------------------------------------------------
+//banner ----------------------------------------------------------------------------------------------------------------------------------
+.banner {
+    background-image: url(/imagenes/paginaPrincipal/fondoBanner.png);
+    background-size: cover; //width: 1920px;
+    height: 532px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .imagenRonaldo {
+        background-image: url(/imagenes/paginaPrincipal/cristianoUno.png);
+        background-size: cover;
+        height: 532px;
+        width: 532px;
+        margin-left: $tamanoMargen;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    .infoBanner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        margin-right: $tamanoMargen; //position: ;
+        .logoFifaGrande {
+            background-image: url(/imagenes/paginaPrincipal/logoEAgrande.png);
+            background-size: cover;
+            height: 139px;
+            width: 545px;
+            margin-bottom: 10px;
+        }
+        .texto {
+            width: 650px;
+        }
+        .imagenBoton {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+            .juegos {
+                background-image: url(/imagenes/paginaPrincipal/juegos.png);
+                height: 290px;
+                width: 374px;
+            }
+        }
+    }
+}
+
+//fin banner --------------------------------------------------------------------------------------------------------------------------------
+//inicio publicidad -------------------------------------------------------------------------------------------------------------------------
+.publicidad {
+    background-image: url(/imagenes/paginaPrincipal/fondoPublicidad.png);
+    background-size: cover;
+    height: 361px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .masJuegos {
+        margin-left: $tamanoMargen;
+        .fondoInfoMasJuegos {
+            //se agrega fondo negro con opacidad
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            border-radius: 40px 40px 40px 40px;
+            width: 805px;
+            height: 205px;
+        }
+        .infoMasJuegos {
+            margin-left: 37px;
+            margin-right: 37px;
+            padding-top: 25px;
+            p {
+                font-size: 20px;
+            }
+        }
+        .botonesPublicidad {
+            margin-left: 37px;
+            margin-top: 22px;
+            .peque {
+                margin-right: 35px;
+            }
+        }
+    }
+    .imagenesJuegos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        .madden {
+            background-image: url(/imagenes/paginaPrincipal/madden.png);
+            background-size: cover;
+            height: 276px;
+            width: 276px; //se genera la sombra paralela
+            box-shadow: -13px 12px 31px -7px rgba(0, 0, 0, 0.75);
+            margin-right: 28px;
+        }
+        .madden:hover {
+            transform: scale(1.1);
+        }
+        .golf {
+            background-image: url(/imagenes/paginaPrincipal/golf.png);
+            background-size: cover;
+            height: 276px;
+            width: 276px; //se genera la sombra paralela
+            box-shadow: -13px 12px 31px -7px rgba(0, 0, 0, 0.75);
+            margin-right: 28px;
+        }
+        .golf:hover {
+            transform: scale(1.1);
+        }
+        .ufc {
+            background-image: url(/imagenes/paginaPrincipal/ufc.png);
+            background-size: cover;
+            height: 276px;
+            width: 276px; //se genera la sombra paralela
+            box-shadow: -13px 12px 31px -7px rgba(0, 0, 0, 0.75);
+            margin-right: $tamanoMargen;
+        }
+        .ufc:hover {
+            transform: scale(1.1);
+        }
+    }
+    .botonBlanco {
+        display: none;
+    }
+}
+
+//fin publicidad-----------------------------------------------------------------------------------------------------------------------------
+//inicio caracteristicas--------------------------------------------------------------------------------------------------------------------
+//caracteristica uno------------------------------------------------------------------------------------------------------------------------
+.caracteristicaUno {
+    background-image: url(/imagenes/paginaPrincipal/fondoHunter.png);
+    background-size: cover;
+    height: 757px;
+    .contenido {
+        margin-left: 762px;
+        padding-top: 55px;
+    }
+    .fondoContenidoDos {
+        //se agrega fondo negro con opacidad
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        border-radius: 40px 40px 40px 40px;
+        width: 805px;
+        height: 267px;
+        margin-left: 762px;
+        margin-top: 55px;
+        .infoCaracteristicaUno {
+            margin-left: 37px;
+            margin-right: 37px;
+            padding-top: 25px;
+            p {
+                font-size: $tamanoFuente;
+            }
+        }
+    }
+    .botonesCaracteristicaUno {
+        margin-left: 762px;
+        margin-top: 55px;
+    }
+}
+
+//fin caracteristica uno--------------------------------------------------------------------------------------------------------------------
+//inicio caracteristica dos-----------------------------------------------------------------------------------------------------------------
+.caracteristicaDos {
+    background-image: url(/imagenes/paginaPrincipal/fondoCaracteristicaDos.png);
+    background-size: cover;
+    height: 674px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    .infoCaracteristicaDos {
+        .logoUltimate {
+            background-image: url(/imagenes/paginaPrincipal/logoEAUltimateTeam.png);
+            background-size: cover;
+            height: 98px;
+            width: 229px;
+        }
+        .fondoTextoCaracteristicaDos {
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            border-radius: 40px 40px 40px 40px;
+            width: 805px;
+            height: 280px;
+            margin-left: -37px;
+            margin-top: 55px;
+            .textoCaracteristicaDos {
+                margin-left: 37px;
+                margin-right: 37px;
+                margin-top: 42px;
+                p {
+                    font-size: $tamanoFuente;
+                    padding-top: 25px;
+                }
+            }
+        }
+        .botonesCaracteristicaDos {
+            //margin-left: 137px;
+            margin-top: 25px;
+        }
+    }
+    .imagenesJugadores {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        margin-left: $tamanoMargen;
+        .lukaku {
+            background-image: url(/imagenes/paginaPrincipal/lukaku.png);
+            background-size: cover;
+            height: 383px;
+            width: 237px;
+            margin-top: 166px;
+            margin-right: 67px;
+        }
+        .dembele {
+            background-image: url(/imagenes/paginaPrincipal/dembele.png);
+            background-size: cover;
+            height: 383px;
+            width: 237px;
+            margin-top: -150px;
+        }
+        .neymar {
+            background-image: url(/imagenes/paginaPrincipal/neymar.png);
+            background-size: cover;
+            height: 383px;
+            width: 237px;
+            margin-top: 166px;
+            margin-left: 67px;
+        }
+    }
+}
+
+//fin caracteristica dos--------------------------------------------------------------------------------------------------------------------
+//inicio caracteristica tres----------------------------------------------------------------------------------------------------------------
+.caracteristicaTres {
+    background-image: url(/imagenes/paginaPrincipal/fondoCaracteristicaTres.png);
+    background-size: cover;
+    height: 762px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .imagenRonaldoDos {
+        background-image: url(/imagenes/paginaPrincipal/cristianoDos.png);
+        background-size: cover;
+        height: 762px;
+        width: 463px;
+        margin-left: $tamanoMargen;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    .infoCaracteristicaTres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        width: 1006px;
+        margin-right: $tamanoMargen;
+        .fondoTextoCaracteristicaTres {
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            border-radius: 40px 40px 40px 40px;
+            width: 805px;
+            height: 377px;
+            margin-top: 15px;
+            .texto {
+                p {
+                    font-size: $tamanoFuente;
+                    padding-top: 25px;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+            }
+        }
+        .botonesCaracteristicaTres {
+            margin-top: 37px;
+        }
+    }
+}
+
+//fin caracteristica tres--------------------------------------------------------------------------------------------------------------------
+//Fin tpdas las caracteristicas--------------------------------------------------------------------------------------------------------------
+//Inicio interaccion-------------------------------------------------------------------------------------------------------------------------
+.interaccion {
+    background-image: url(/imagenes/paginaPrincipal/fondoInteraccion.png);
+    background-size: cover;
+    height: 686px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .descripcionInteraccion {
+        width: 811px;
+        margin-left: $tamanoMargen;
+        .tituloInteraccion {
+            //empty for now
+        }
+        .textoInteraccion {
+            margin-top: 25px;
+            font-size: $tamanoFuente;
+        }
+        .datosUsuarioInteraccion {
+            margin-top: 43px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: center;
+            .escribirCorreo {
+                margin-right: 16px;
+            }
+        }
+    }
+    .interaccionJugadores {
+        width: 533px;
+        margin-right: 200px;
+        .imagenJugadorInteraccion {
+            background-size: cover;
+            width: 237px;
+            margin-left: 130px;
+            margin-bottom: 25px;
+        }
+        .valoracionJugadores {
+            h3 {
+                margin-right: 20px;
+                text-align: center;
+            }
+            input[type=range] {
+                width: 500px;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+//fin interaccion----------------------------------------------------------------------------------------------------------------------------
+//inicio galerias----------------------------------------------------------------------------------------------------------------------------
+.galerias {
+    background-image: url(/imagenes/paginaPrincipal/fondoGalerias.png);
+    background-size: cover;
+    height: 721px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+    .galeriaVideos {
+        .video {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+        }
+        .botonVideos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-top: 25px;
+        }
+    }
+    .galeriaImagenes {
+        width: 720px;
+        .imagenPequenaLeyendas {}
+    }
+}
+
+//fin galerias-------------------------------------------------------------------------------------------------------------------------------
+//inicio especificaciones--------------------------------------------------------------------------------------------------------------------
+.especificaciones {
+    background-image: url(/imagenes/paginaPrincipal/fondoEspecificaciones.png);
+    background-size: cover;
+    height: 665px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .imagenRonaldoJuego {
+        background-image: url(/imagenes/paginaPrincipal/ronaldoJuego.png);
+        background-size: cover;
+        height: 579px;
+        width: 411px;
+        margin-left: $tamanoMargen;
+    }
+    .informacionEspecificaciones {
+        width: 1221px;
+        margin-right: $tamanoMargen;
+        .tituloInformacionEspecificaciones {
+            //empty for now
+        }
+        .textoInformacionEspecificaciones {
+            margin-top: 27px;
+            p {
+                font-size: $tamanoFuente;
+            }
+        }
+        .requisitos {
+            margin-top: 27px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: stretch;
+            align-items: center;
+            .minimos {
+                width: 560px;
+                .tituloRequisitosMinimos {
+                    //empty for now
+                }
+                .listaMinimos {
+                    li {
+                        list-style: none;
+                        font-family: $tipografiaParrafos;
+                        font-size: 20px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .maximos {
+                width: 560px;
+                .tituloRequisitosMaximos {
+                    //empty for now
+                }
+                .listaMaximos {
+                    li {
+                        list-style: none;
+                        font-family: $tipografiaParrafos;
+                        font-size: 20px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// fin especificaciones----------------------------------------------------------------------------------------------------------------------
+// inicio newsletter-------------------------------------------------------------------------------------------------------------------------
+.newsletter {
+    background-image: url(/imagenes/paginaPrincipal/fondoNewsletter.png);
+    background-size: cover;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .informacionNewsletter {
+        width: 900px;
+        margin-left: $tamanoMargen;
+        .tituloInformacionNewsletter {
+            //empty for now
+        }
+        .parrafoNewsletter {
+            margin-top: 15px;
+            font-size: $tamanoFuente;
+        }
+    }
+    .contactoNewsletter {
+        margin-right: 415px;
+        .informacionContactoNewsletter {
+            width: 600px;
+            .escribirCorreoNewsletter {
+                margin-left: 125px;
+            }
+            .botonNewsletter {
+                margin-top: 25px;
+                margin-left: 320px;
+            }
+        }
+    }
+}
+
+// fin newsletter----------------------------------------------------------------------------------------------------------------------------
+// inicio footer-----------------------------------------------------------------------------------------------------------------------------
+.footer {
+    background-image: url(/imagenes/paginaPrincipal/fondoFooter.png);
+    background-size: cover;
+    height: 212px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    a {
+        list-style: none;
+        font-family: $tipografiaParrafos;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+    }
+    .infoUno {
+        margin-left: $tamanoMargen;
+        .textoInfoUno {
+            //empty for now
+        }
+        .listaInfoUno {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+                list-style: none;
+            }
+        }
+    }
+    .infoDos {
+        margin-left: 92px;
+        .listaInfoDos {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+    }
+    .siguenos {
+        margin-left: 92px;
+        .textoSiguenos {
+            //empty for now
+        }
+        .listaSiguenos {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+    }
+    .lugares {
+        margin-left: 92px;
+        .textoLugares {
+            //empty for now
+        }
+        .listaLugares {
+            li {
+                list-style: none;
+                font-family: $tipografiaParrafos;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-weight: 200;
+            }
+        }
+    }
+    .logoFooter {
+        background-image: url(/imagenes/paginaPrincipal/logoEAdos.png);
+        background-size: cover;
+        height: 70px;
+        width: 273px;
+        margin-left: 605px;
+    }
+}
+
+// libreria baguette-----------------------------------------------------------------------------------------------------------------------
+body {
+    background-color: #666;
+    color: #ddd;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    .tituloGaleriaImagenes {
+        padding: 25px 0;
+        text-align: center;
+    }
+    .content {
+        // padding: 0 25%;
+        a,
+        a:visited {
+            color: #9EB4CA;
+            ;
+            text-decoration: none;
+        }
+        h1,
+        h2,
+        h3,
+        footer,
+        .gallery {
+            text-align: center;
+        }
+        pre {
+            width: 340px;
+            margin: 0 auto;
+            border: dashed 1px #aaa;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 480px) {
+            pre {
+                max-width: 98%;
+            }
+        }
+        header,
+        footer {
+            display: block;
+            padding: .2em 0;
+            background-color: #555;
+            box-shadow: 0 0 8px #222;
+        }
+        footer {
+            margin-top: 1.5em;
+        }
+        .content {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .gallery:after {
+            content: '';
+            display: block;
+            height: 2px;
+            margin: .5em 0 1.4em;
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(77, 77, 77, 1) 50%, rgba(0, 0, 0, 0) 100%);
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(77, 77, 77, 1) 50%, rgba(0, 0, 0, 0) 100%);
+        }
+        .gallery img {
+            height: 100%;
+        }
+        .gallery a {
+            width: 240px;
+            height: 180px;
+            display: inline-block;
+            overflow: hidden;
+            margin: 4px 6px;
+            box-shadow: 0 0 4px -1px #000;
+        }
+        .ribbon>img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+        }
+        @media (max-width: 768px) {
+            .sm-hidden {
+                display: none;
+            }
+        }
+        /* Highlight.js Tomorrow Night style */
+        .hljs-comment,
+        .hljs-quote {
+            color: #969896
+        }
+        .hljs-deletion,
+        .hljs-name,
+        .hljs-regexp,
+        .hljs-selector-class,
+        .hljs-selector-id,
+        .hljs-tag,
+        .hljs-template-variable,
+        .hljs-variable {
+            color: #c66
+        }
+        .hljs-tag {
+            color: #f8f8f2
+        }
+        .hljs-built_in,
+        .hljs-builtin-name,
+        .hljs-link,
+        .hljs-literal,
+        .hljs-meta,
+        .hljs-number,
+        .hljs-params,
+        .hljs-type {
+            color: #de935f
+        }
+        .hljs-attr {
+            color: #f0c674
+        }
+        .hljs-addition,
+        .hljs-bullet,
+        .hljs-string,
+        .hljs-symbol {
+            color: #b5bd68
+        }
+        .hljs-section,
+        .hljs-title {
+            color: #81a2be
+        }
+        .hljs-keyword,
+        .hljs-selector-tag {
+            color: #b294bb
+        }
+        .hljs {
+            display: block;
+            overflow-x: auto;
+            background: #1d1f21;
+            color: #c5c8c6;
+            padding: .8em
+        }
+        .hljs-emphasis {
+            font-style: italic
+        }
+        .hljs-strong {
+            font-weight: 700
+        }
+    }
+    .gallery a:hover {
+        transform: scale(1.1);
+    }
+}
+
+// fin libreria baguette--------------------------------------------------------------------------------------------------------------------
+//inicio responsive-------------------------------------------------------------------------------------------------------------------------
+// width de maximo 1900 pixeles-------------------------------------------------------------------------------------------------------------
+@media (max-width: 1900px) {
+    // arreglo en publicidad----------------------------------------------------------------------------------------------------------------
+    .publicidad {
+        margin-left: -50px;
+        .masJuegos {
+            margin-right: 25px;
+        } //fin arreglo en publicidad-------------------------------------------------------------------------------------------------------
+    } //inicio arreglo caracteristica dos---------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        .infoCaracteristicaDos {
+            margin-left: 30px;
+        }
+    } //fin arreglo caracteristica dos----------------------------------------------------------------------------------------------------
+    // inicio arreglo especificaciones---------------------------------------------------------------------------------------------------
+    .especificaciones {
+        .imagenRonaldoJuego {
+            margin-right: 50px;
+        }
+    }
+}
+
+//fin width maximo 1900 px-----------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1800 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1800px) {
+    // arreglo en publicidad----------------------------------------------------------------------------------------------------------------
+    .publicidad {
+        margin-left: -70px;
+        height: 600px;
+        .masJuegos {
+            margin-right: 50px;
+            margin-top: 0px;
+        }
+        .imagenesJuegos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
+            height: 600px;
+            .golf {
+                order: 0;
+                flex: 0 1 auto;
+                align-self: flex-end;
+                margin-bottom: 50px;
+            }
+            .ufc,
+            .madden {
+                margin-top: 50px;
+            }
+        } //fin arreglo en publicidad-------------------------------------------------------------------------------------------------------
+    } //inicio arreglo caracteristica dos---------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        // justify-content: space-around;
+        .imagenesJugadores {
+            margin-left: 25px;
+            ;
+        }
+    } //fin arreglo caracteristica dos----------------------------------------------------------------------------------------------------
+    // inicio arreglo especificaciones---------------------------------------------------------------------------------------------------
+    .especificaciones {
+        .imagenRonaldoJuego {
+            margin-right: 50px;
+        }
+    }
+}
+
+//fin width maximo 1800 px-----------------------------------------------------------------------------------------------------------------
+//inicio width maximo 1750 px--------------------------------------------------------------------------------------------------------------
+@media (max-width: 1750px) {
+    .publicidad {
+        .imagenesJuegos {
+            .ufc {
+                margin-left: -100px;
+                margin-top: 20px;
+            }
+            .madden {
+                margin-top: 20px;
+            }
+            .golf {
+                margin-bottom: 20px;
+                margin-left: -100px;
+            }
+        }
+    }
+    .interaccion {
+        .interaccionJugadores {
+            margin-right: 100px;
+        }
+    }
+    .newsletter {
+        .informacionContactoNewsletter {
+            margin-right: -200px;
+        }
+    }
+    .footer {
+        .logoFooter {
+            margin-left: 500px;
+        }
+    } //fin arreglo footer ---------------------------------------------------------------------------------------------------------------
+}
+
+// fin width maximo 1750 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1650 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1650px) {
+    // arreglo en publicidad---------------------------------------------------------------------------------------------------------------
+    .publicidad {
+        margin-left: -10px;
+        height: 600px;
+        .masJuegos {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .imagenesJuegos {
+            margin-left: 0px;
+        } //fin arreglo en publicidad-------------------------------------------------------------------------------------------------------
+    } //inicio arreglo caracteristica dos---------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        .imagenesJugadores {
+            .lukaku {
+                margin-right: 25px;
+            }
+            .neymar {
+                margin-left: 25px;
+            }
+        }
+    } //fin arreglo caracteristica dos-----------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica tres--------------------------------------------------------------------------------------------------
+    .caracteristicaTres {
+        .imagenRonaldoDos {
+            margin-left: 50px;
+        }
+        .infoCaracteristicaTres {
+            margin-right: 25px;
+        }
+    } //fin arreglo caracteristica tres ---------------------------------------------------------------------------------------------------
+    //inicio arreglo especificaciones -----------------------------------------------------------------------------------------------------
+    .especificaciones {
+        .imagenRonaldoJuego {
+            margin-left: 25px;
+        }
+        .informacionEspecificaciones {
+            margin-right: 25px;
+        }
+    } //fin arreglo especificaciones ---------------------------------------------------------------------------------------------------
+    //inicio arreglo footer ------------------------------------------------------------------------------------------------------------
+    .footer {
+        .logoFooter {
+            margin-left: 400px;
+        }
+    } // fin arreglo footer-------------------------------------------------------------------------------------------------------------
+}
+
+// fin width maximo 1650 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1550 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1550px) {
+    // inicio arreglo header --------------------------------------------------------------------------------------------------------------
+    header {
+        .contenedor {
+            .logoDos {
+                display: none;
+            }
+        }
+    } // fin arreglo header --------------------------------------------------------------------------------------------------------------
+    // inicio arreglo publicidad----------------------------------------------------------------------------------------------------------
+    .publicidad {
+        .masJuegos {
+            margin-right: 0px;
+            .fondoInfoMasJuegos {
+                width: 700px;
+            }
+        }
+        .imagenesJuegos {
+            margin-right: 100px;
+            .ufc {
+                margin-right: 0px;
+                margin-left: -100px;
+            }
+            .madden {
+                margin-left: 0px;
+                margin-right: 0;
+            }
+            .golf {
+                margin-right: 0;
+            }
+        }
+    } // fin arreglo publicidad-----------------------------------------------------------------------------------------------------------
+    //inicio arreglo caracteristica uno---------------------------------------------------------------------------------------------------
+    .caracteristicaUno {
+        .contenido {
+            margin-left: 600px;
+        }
+        .contenidoDos {
+            margin-left: -200px;
+        }
+    } // fin caracteristica uno-----------------------------------------------------------------------------------------------------------
+    // inicio caracteristica dos----------------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        .imagenesJugadores {
+            margin-bottom: 150px;
+            .dembele {
+                display: none;
+            }
+        }
+    } // fin caracteristica dos-----------------------------------------------------------------------------------------------------------
+    // inicio caracteristica tres---------------------------------------------------------------------------------------------------------
+    .caracteristicaTres {
+        .imagenRonaldoDos {
+            margin-left: 0;
+        }
+        .infoCaracteristicaTres {
+            margin-right: 100;
+            width: 800px;
+        }
+    } // fin caracteristica tres ---------------------------------------------------------------------------------------------------------
+    // inicio galerias-------------------------------------------------------------------------------------------------------------------
+    .galerias {
+        .galeriaVideos {
+            margin-left: 50px;
+        }
+    } // fin galerias----------------------------------------------------------------------------------------------------------------------
+    // inicio especificaciones---------------------------------------------------------------------------------------------------------
+    .especificaciones {
+        .imagenRonaldoJuego {
+            display: none;
+        }
+        .informacionEspecificaciones {
+            margin-right: 0;
+            margin-left: 100px;
+        }
+    } // fin especificaciones-----------------------------------------------------------------------------------------------------------
+    // inicio newsletter----------------------------------------------------------------------------------------------------------------
+    .newsletter {
+        height: 400px;
+    } // fin newsletter------------------------------------------------------------------------------------------------------------------
+    // inicio footer---------------------------------------------------------------------------------------------------------------------
+    .footer {
+        .logoFooter {
+            margin-left: 100;
+        }
+    }
+} // fin width maximo 1550 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1422 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1422px) {
+    .publicidad {
+        .imagenesJuegos {
+            .ufc {
+                display: none;
+            }
+            .golf {
+                order: 0;
+                flex: 0 1 auto;
+                align-self: auto;
+                margin: 120px 0 0 0;
+            }
+            .madden {
+                margin: 120px 25px 0 0;
+            }
+        }
+    }
+    .galerias {
+        height: 1100px;
+    }
+    .interaccion {
+        height: 800px;
+        .descripcionInteraccion {
+            margin: 0 0 0 25px;
+        }
+        .interaccionJugadores {
+            margin: 0;
+            h3 {
+                margin: 0 0 0 25px;
+            }
+        }
+    }
+} // fin width maximo 1422 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1350 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1350px) {
+    // inicio de arreglo banner------------------------------------------------------------------------------------------------------------
+    .banner {
+        .imagenRonaldo {
+            margin-left: 0;
+        }
+        .infoBanner {
+            margin-right: 0px;
+        }
+    } // fin arreglo banner -----------------------------------------------------------------------------------------------------------
+    // inicio arreglo publicidad-------------------------------------------------------------------------------------------------------
+    .publicidad {
+        .imagenesJuegos {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: center;
+            .golf {
+                display: none;
+            }
+            .botonBlanco {
+                display: block;
+                margin-top: 50px;
+            }
+        }
+    } // fin arreglo publicidad-----------------------------------------------------------------------------------------------------------
+    //inicio arreglo caracteristica uno --------------------------------------------------------------------------------------------------
+    .caracteristicaUno {
+        .contenido {
+            margin-left: 300px;
+        }
+        .contenidoDos {
+            margin-left: -500px;
+        }
+    } // fin arreglo caracteristica uno --------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica dos -------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        .neymar {
+            display: none;
+        }
+    } // fin arreglo caracteristica dos ---------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica tres -------------------------------------------------------------------------------------------------
+    .caracteristicaTres {
+        .imagenRonaldoDos {
+            display: none;
+        }
+        .infoCaracteristicaTres {
+            margin-left: 200px;
+            margin-right: 0;
+        }
+    } // fin arreglo caracteristica tres -------------------------------------------------------------------------------------------------
+    // inicio arreglo interaccion --------------------------------------------------------------------------------------------------------
+    .interaccion {
+        height: 1000px;
+        .descripcionInteraccion {
+            width: 500px;
+            margin-left: 100px;
+            .datosUsuarioInteraccion {
+                .escribirCorreo {
+                    .input {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        .interaccionJugadores {
+            margin-right: 100px;
+        }
+    } // fin arreglo interaccion ---------------------------------------------------------------------------------------------------------
+    // inicio arreglo especificaciones ---------------------------------------------------------------------------------------------------
+    .especificaciones {
+        .informacionEspecificaciones {
+            width: 1000px;
+        }
+    } // fin arreglo especifiaciones -----------------------------------------------------------------------------------------------------
+    // inicio arreglo newsletter ---------------------------------------------------------------------------------------------------------
+    .newsletter {
+        height: 550px;
+        justify-content: space-between;
+        .tituloInformacionNewsletter {
+            //margin-right: 20px;
+            width: 500px;
+        }
+        .informacionContactoNewsletter {
+            width: 400px; // padding-left: 300px;
+            .escribirCorreoNewsletter {
+                margin: 0;
+                .input {
+                    width: 300px;
+                    margin: 0;
+                }
+            }
+            .botonNewsletter {
+                button {
+                    margin-left: -130px;
+                }
+            }
+        }
+    } // fin arreglo newsletter ----------------------------------------------------------------------------------------------------------
+    // inicio arreglo footer ------------------------------------------------------------------------------------------------------------
+    .footer {
+        .logoFooter {
+            margin-left: 0;
+        }
+    } // fin arreglo footer---------------------------------------------------------------------------------------------------------------
+}
+
+// fin width maximo 1350 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1100 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1100px) {
+    // inicio arreglo header -------------------------------------------------------------------------------------------------------------
+    header {
+        .contenedor {
+            margin: 0 20px 0 20px;
+            .logoUno {
+                display: none;
+            }
+        }
+    } // fim arreglo header----------------------------------------------------------------------------------------------------------------
+    // inicio arreglo banner --------------------------------------------------------------------------------------------------------------
+    .banner {
+        .imagenRonaldo {
+            display: none;
+        }
+        .infoBanner {
+            margin-left: 20%;
+        }
+    } // fin arreglo banner ---------------------------------------------------------------------------------------------------------------
+    //inicio arreglo interracion ----------------------------------------------------------------------------------------------------------
+    .interaccion {
+        .interaccionJugadores {
+            .valoracionJugadores {
+                margin-left: 80px;
+                input[type=range] {
+                    width: 300px;
+                    margin-left: 40px;
+                }
+            }
+        }
+    } // fin arreglo interaccion -----------------------------------------------------------------------------------------------------------
+    // inicio arreglo galerias -------------------------------------------------------------------------------------------------------------
+    .galerias {
+        .galeriaVideos {
+            transform: scale(0.8);
+            margin-left: -50px;
+            button {
+                transform: scale(1.2);
+            }
+        }
+        .galeriaImagenes {
+            margin-right: 100px;
+        }
+    } // fin arreglo galerias --------------------------------------------------------------------------------------------------------------
+    // inicio arreglo footer
+    .footer {
+        .logoFooter {
+            display: none;
+        }
+    } // fin arreglo footer ---------------------------------------------------------------------------------------------------------------
+}
+
+// fin width maximo 1100 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 1000 px ------------------------------------------------------------------------------------------------------------
+@media (max-width: 1000px) {
+    // inicio arreglo header -------------------------------------------------------------------------------------------------------------
+    header {
+        .contenedor {
+            .boton {
+                display: none;
+            }
+            nav {
+                margin-left: 80px;
+            }
+        }
+    } // fin arreglo header ---------------------------------------------------------------------------------------------------------------
+    // inicio arreglo publicidad ----------------------------------------------------------------------------------------------------------
+    .publicidad {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: stretch;
+        align-items: flex-start;
+        height: 650px;
+        .masJuegos {
+            margin-left: 150px;
+            margin-top: 25px;
+            .botonesPublicidad {
+                margin-left: 250px;
+            }
+        }
+        .imagenesJuegos {
+            margin: -100px 0 0 300px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: flex-start;
+            .botonBlanco {
+                margin-top: 250px;
+            }
+        }
+    } // fin arreglo publicidad ----------------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica uno -------------------------------------------------------------------------------------------------
+    .caracteristicaUno {
+        .contenido {
+            margin-left: 100px;
+        }
+        .contenidoDos {
+            margin-left: -700px;
+        }
+    } // fin arreglo caracteristica uno --------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica dos -------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        .imagenesJugadores {
+            display: none;
+        }
+    } // fin arreglo caracteristica dos ---------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica tres -------------------------------------------------------------------------------------------------
+    .caracteristicaTres {
+        .infoCaracteristicaTres {
+            margin-left: 100px;
+        }
+    } // fin arreglo caracteristica tres --------------------------------------------------------------------------------------------------
+    // inicio arreglo interaccion ---------------------------------------------------------------------------------------------------------
+    .interaccion {
+        height: 1350px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        .descripcionInteraccion {
+            margin-top: 50px;
+            width: 600px;
+            .tituloInteraccion {
+                width: 700px;
+            }
+            p {
+                width: 700px;
+            }
+            .datosUsuarioInteraccion {
+                .escribirCorreo {
+                    width: 600px;
+                    input {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+        .interaccionJugadores {
+            margin: 50px 0 0 220px;
+            .valoracionJugadores {
+                margin-left: -50px;
+                input[type=range] {
+                    margin-left: 150px;
+                }
+            }
+        }
+    } // fin arreglo interaccion ---------------------------------------------------------------------------------------------------------
+    // inicio arreglo galerias -----------------------------------------------------------------------------------------------------------
+    .galerias {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        height: 1360px;
+        .galeriaVideos {
+            transform: scale(1);
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .galeriaImagenes {
+            margin: 25px 0 0 115px;
+        }
+    } // fin arreglo galerias ------------------------------------------------------------------------------------------------------------
+    // inicio arreglo especificaciones ---------------------------------------------------------------------------------------------------
+    .especificaciones {
+        height: 800px;
+        .informacionEspecificaciones {
+            margin: 0 0 0 100px;
+            width: 800px;
+        }
+    } // fin arreglo especificaciones ----------------------------------------------------------------------------------------------------
+    // inicio arreglo newsletter ---------------------------------------------------------------------------------------------------------
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        height: 450px;
+        .informacionNewsletter {
+            margin: 0;
+            .tituloInformacionNewsletter {
+                margin: 50px 0 0 100px;
+            }
+            .parrafoNewsletter {
+                margin: 0 0 0 100px;
+            }
+        }
+        .contactoNewsletter {
+            margin: 0;
+            .informacionContactoNewsletter {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-content: stretch;
+                align-items: flex-start;
+                .escribirCorreoNewsletter {
+                    margin-top: 20px;
+                }
+            }
+        }
+    } // fin arreglo newsletter ----------------------------------------------------------------------------------------------------------
+}
+
+// fin width maximo 1000 px ---------------------------------------------------------------------------------------------------------------
+// inicio width maximo 800 px -------------------------------------------------------------------------------------------------------------
+@media (max-width: 800px) {
+    // inicio arreglo header --------------------------------------------------------------------------------------------------------------
+    header {
+        .contenedor nav {
+            margin-left: -10px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    } // fin arreglo header ---------------------------------------------------------------------------------------------------------------
+    // inicio arreglo banner --------------------------------------------------------------------------------------------------------------
+    .banner {
+        .infoBanner {
+            margin-left: 70px;
+        }
+    } // fin arreglo banner --------------------------------------------------------------------------------------------------------------
+    //inicio arreglo publicidad ----------------------------------------------------------------------------------------------------------
+    .publicidad {
+        .fondoInfoMasJuegos {
+            margin-left: -110px;
+        }
+        .imagenesJuegos {
+            margin-left: 180px;
+        }
+        .botonesPublicidad {
+            margin-left: 0;
+        }
+    } // fin arreglo publicidad ---------------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica uno ------------------------------------------------------------------------------------------------
+    .caracteristicaUno {
+        .contenido {
+            margin-left: 50px;
+        }
+        .contenidoDos {
+            margin-left: -750px;
+            .fondoContenidoDos {
+                width: 700px;
+                height: 300px;
+            }
+        }
+    } // fin arreglo caracteristica uno -------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica dos ------------------------------------------------------------------------------------------------
+    .caracteristicaDos {
+        .infoCaracteristicaDos {
+            .fondoTextoCaracteristicaDos {
+                width: 700px;
+                height: 320px;
+            }
+        }
+    } // fin arreglo caracteristica dos -------------------------------------------------------------------------------------------------
+    // inicio arreglo caracteristica tres -----------------------------------------------------------------------------------------------
+    .caracteristicaTres {
+        margin-left: -70px;
+        height: 860px;
+        .infoCaracteristicaTres {
+            .fondoTextoCaracteristicaTres {
+                width: 700px;
+                height: 450px;
+            }
+        }
+    } // fin arreglo caracteristica tres ------------------------------------------------------------------------------------------------
+    // inicio arreglo interaccion -------------------------------------------------------------------------------------------------------
+    .interaccion {
+        .descripcionInteraccion {
+            margin-left: 40px;
+        }
+        .interaccionJugadores {
+            margin-left: 100px;
+        }
+    } // fin arreglo interaccion -------------------------------------------------------------------------------------------------------
+    // inicio arreglo galerias ---------------------------------------------------------------------------------------------------------
+    .galerias {
+        margin-left: -50px;
+        .galeriaVideos {
+            margin-left: 60px;
+            width: 750px;
+        }
+        .galeriaImagenes {
+            margin-left: 60px;
+            width: 750px;
+        }
+    } // fin arreglo galerias -----------------------------------------------------------------------------------------------------------
+    // inicio arreglo especificaciones --------------------------------------------------------------------------------------------------
+    .especificaciones {
+        height: 880px;
+        .informacionEspecificaciones {
+            margin-left: 30px;
+            width: 700px;
+        }
+    } // fin arreglo especificaciones ---------------------------------------------------------------------------------------------------
+    // inicio arreglo newsletter --------------------------------------------------------------------------------------------------------
+    .newsletter {
+        .informacionNewsletter {
+            margin-left: -40px;
+            margin-top: -25px;
+            width: 700px;
+        }
+        .contactoNewsletter {
+            margin-left: -80px;
+        }
+    } // fin arreglo newsletter ---------------------------------------------------------------------------------------------------------
+    // inicio arreglo footer ------------------------------------------------------------------------------------------------------------
+    .footer {
+        .infoUno,
+        .infoDos,
+        .siguenos,
+        .lugares {
+            margin-left: 50px;
+        }
+    }
+}

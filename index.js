@@ -34,6 +34,10 @@ app.get('/checkout', (req, res) => {
     res.render('checkout', {});
 })
 
+app.get('/juego', (req, res) => {
+    res.render('juego', {});
+})
+
 app.get('/', (req, res) => {
 
     var prod = db.collection('juegos')
