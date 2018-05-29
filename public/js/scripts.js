@@ -4,13 +4,16 @@ var scene3d = document.getElementById("interaccionDosId");
 var CANVAS_WIDTH = 1080;
 var CANVAS_HEIGHT = 860;
 
-var camera = new THREE.PerspectiveCamera( 75, CANVAS_WIDTH/CANVAS_HEIGHT, 0.1, 1000 );
-camera.position.z = 600;
+
+var camera = new THREE.PerspectiveCamera(75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000);
+camera.position.z = 500;
 camera.lookAt(scene.position);
 
-var renderer = new THREE.WebGLRenderer({ alpha: true });
+var renderer = new THREE.WebGLRenderer({
+    alpha: true
+});
 renderer.setSize(CANVAS_WIDTH, CANVAS_HEIGHT);
-renderer.setClearColor( 0x000000, 0 );
+renderer.setClearColor(0x000000, 0);
 interaccionDosId.appendChild(renderer.domElement);
 renderer.render(scene, camera);
 
@@ -19,42 +22,46 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.25;
 controls.enableZoom = true;
 
-var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30, 100%, 75%)'), 1.0);
-keyLight.position.set(-100, 0, 100);
-
-var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 0.75);
-fillLight.position.set(100, 0, 100);
-
-var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
-backLight.position.set(100, 0, -100).normalize();
-
-scene.add(keyLight);
-scene.add(fillLight);
-scene.add(backLight);
+var light, materials;
+scene.add(new THREE.AmbientLight(0x666666));
+light = new THREE.DirectionalLight(0xdfebff, 1);
+light.position.set(50, 200, 100);
+light.position.multiplyScalar(1.3);
+light.castShadow = true;
+light.shadow.mapSize.width = 1024;
+light.shadow.mapSize.height = 1024;
+var d = 300;
+light.shadow.camera.left = -d;
+light.shadow.camera.right = d;
+light.shadow.camera.top = d;
+light.shadow.camera.bottom = -d;
+light.shadow.camera.far = 1000;
+scene.add(light);
 
 var mtlLoader = new THREE.MTLLoader();
 mtlLoader.setTexturePath('/modelado/');
 mtlLoader.setPath('/modelado/');
-mtlLoader.load('r2-d2.mtl', function (materials) {
+mtlLoader.load('CristianoRonaldo.mtl', function (materials) {
 
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
     objLoader.setPath('/modelado/');
-    objLoader.load('r2-d2.obj', function (object) {
+    objLoader.load('CristianoRonaldo.obj', function (object) {
 
         scene.add(object);
         object.position.y -= 300;
+        object.scale.x = -1;
 
     });
 
 });
 
 var animate = function () {
-	requestAnimationFrame( animate );
-	controls.update();
-	renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
 };
 
 animate();
