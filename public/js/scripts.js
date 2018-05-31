@@ -4,7 +4,6 @@ var scene3d = document.getElementById("interaccionDosId");
 var CANVAS_WIDTH = 1080;
 var CANVAS_HEIGHT = 1050;
 
-
 var camera = new THREE.PerspectiveCamera(75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000);
 camera.position.z = 600;
 camera.lookAt(scene.position);
@@ -38,16 +37,27 @@ light.shadow.camera.bottom = -d;
 light.shadow.camera.far = 1000;
 scene.add(light);
 
+//var material ='CristianoRonaldo.mtl';
+
+var botonReal = document.getElementById("madrid");
+var botonAtletico = document.getElementById("atletico");
+var botonBarcelona = document.getElementById("barcelona");
+var botonChelsea = document.getElementById("chelsea");
+var botonManchester = document.getElementById("manchester");
+var botonPsg = document.getElementById("psg");
+
 var mtlLoader = new THREE.MTLLoader();
+var objLoader = new THREE.OBJLoader();
 mtlLoader.setTexturePath('/modelado/');
 mtlLoader.setPath('/modelado/');
+
+//DEFAULT ATLETICO*************************************************
 mtlLoader.load('CristianoRonaldo.mtl', function (materials) {
 
     materials.preload();
-
-    var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
     objLoader.setPath('/modelado/');
+
     objLoader.load('CristianoRonaldo.obj', function (object) {
 
         scene.add(object);
@@ -57,6 +67,51 @@ mtlLoader.load('CristianoRonaldo.mtl', function (materials) {
     });
 
 });
+
+//ATLETICO*************************************************
+botonAtletico.onclick = function () {
+    mtlLoader.load('CristianoRonaldo.mtl', function (materials) {
+
+        materials.preload();
+        objLoader.setMaterials(materials);
+        objLoader.setPath('/modelado/');
+
+        objLoader.load('CristianoRonaldo.obj', function (object) {
+
+            scene.add(object);
+            object.position.y -= 300;
+            object.scale.x = -1;
+
+        });
+
+    });
+
+}
+
+
+//MADRID*************************************************
+botonReal.onclick = function () {
+
+    mtlLoader.load('CristianoRonaldoReal.mtl', function (materials) {
+
+        materials.preload();
+        objLoader.setMaterials(materials);
+        objLoader.setPath('/modelado/');
+
+        objLoader.load('CristianoRonaldo.obj', function (object) {
+
+            scene.add(object);
+            object.position.y -= 300;
+            object.scale.x = -1;
+
+        });
+
+    });
+
+
+
+}
+
 
 var animate = function () {
     requestAnimationFrame(animate);

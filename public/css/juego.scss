@@ -511,12 +511,18 @@ header li:last-child {
         justify-content: flex-start;
         align-content: stretch;
         align-items: center;
-.modoCarrera{
+        .modoCarrera {
+            text-align: center;
+            margin: 50px;
+        }
 
-    text-align: center;
-    margin: 50px;
-}
-
+        .seleccionaEquipo{
+            text-align: center;
+            align-self: center;
+            font-size: 30px;
+            margin-top: -40px;
+            padding-bottom: 25px;
+        }
         .equipos {
             width: 830px;
             height: 861px;
@@ -536,6 +542,14 @@ header li:last-child {
                         margin-left: 160px;
                         margin-bottom: 10px;
                         margin-top: 25px;
+                        animation-timing-function: ease;
+                        transition: transform 0.5s;
+                    }
+                    .atletico:hover {
+                        background-color: rgb(209, 209, 209);
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform: scale(1.05);
                     }
                     h5 {
                         margin-left: $tamanoMargen;
@@ -549,6 +563,14 @@ header li:last-child {
                         margin-left: 160px;
                         margin-bottom: 10px;
                         margin-top: 25px;
+                        animation-timing-function: ease;
+                        transition: transform 0.5s;
+                    }
+                    .barcelona:hover {
+                        background-color: rgb(209, 209, 209);
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform: scale(1.05);
                     }
                     h5 {
                         margin-left: 155px;
@@ -562,6 +584,14 @@ header li:last-child {
                         margin-left: 160px;
                         margin-bottom: 10px;
                         margin-top: 25px;
+                        animation-timing-function: ease;
+                        transition: transform 0.5s;
+                    }
+                    .chelsea:hover {
+                        background-color: rgb(209, 209, 209);
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform: scale(1.05);
                     }
                     h5 {
                         margin-left: 170px;
@@ -577,6 +607,14 @@ header li:last-child {
                         margin-left: 160px;
                         margin-bottom: 10px;
                         margin-top: 25px;
+                        animation-timing-function: ease;
+                        transition: transform 0.5s;
+                    }
+                    .madrid:hover {
+                        background-color: rgb(209, 209, 209);
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform: scale(1.05);
                     }
                     h5 {
                         margin-left: 145px;
@@ -590,6 +628,14 @@ header li:last-child {
                         margin-left: 160px;
                         margin-bottom: 10px;
                         margin-top: 25px;
+                        animation-timing-function: ease;
+                        transition: transform 0.5s;
+                    }
+                    .manchester:hover {
+                        background-color: rgb(209, 209, 209);
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform: scale(1.05);
                     }
                     h5 {
                         margin-left: 100px;
@@ -603,6 +649,14 @@ header li:last-child {
                         margin-left: 160px;
                         margin-bottom: 10px;
                         margin-top: 25px;
+                        animation-timing-function: ease;
+                        transition: transform 0.5s;
+                    }
+                    .psg:hover {
+                        background-color: rgb(209, 209, 209);
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transform: scale(1.05);
                     }
                     h5 {
                         margin-left: 95px;
@@ -610,13 +664,9 @@ header li:last-child {
                 }
             }
         }
-
-.modelado{
-
-
-    height: 1050px;
-}
-
+        .modelado {
+            height: 1050px;
+        }
     }
     .formulario {
         background-image: url(../imagenes/checkout/fondoDatosUsuario.png);
