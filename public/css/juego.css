@@ -1,0 +1,1677 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,600,700");
+@font-face {
+  font-family: EASPORTS15;
+  src: url(/ea_font/EASPORTS15.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: Mukta Mahee;
+  color: white;
+}
+
+h1 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 75px;
+}
+
+h2 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 48px;
+}
+
+h3 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 36px;
+}
+
+h4 {
+  font-family: Mukta Mahee;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+h5 {
+  font-family: EASPORTS15;
+  color: #221d53;
+  font-size: 30px;
+}
+
+button {
+  background-image: url(/imagenes/paginaPrincipal/fondoBotonGrande.png);
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  font-family: EASPORTS15;
+  color: white;
+  height: 68px;
+  width: 202px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.peque {
+  background-image: url(/imagenes/paginaPrincipal/fondoBotonPeque.png);
+  background-size: cover;
+  font-family: EASPORTS15;
+  color: white;
+  height: 57px;
+  width: 166px;
+  border: none;
+}
+
+.botonBlanco {
+  background-image: url(/imagenes/paginaPrincipal/fondoBotonBlancoPeque.png);
+  background-size: cover;
+  font-family: EASPORTS15;
+  color: white;
+  height: 57px;
+  width: 166px;
+  border: none;
+}
+
+.botonBlancoGrande {
+  background-image: url(/imagenes/paginaPrincipal/fondoBotonBlancoGrande.png);
+  margin-left: 68px;
+}
+
+.input {
+  height: 68px;
+  width: 574px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Mukta Mahee;
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 40px 40px 40px 40px;
+}
+
+header {
+  background: #221d53;
+}
+
+header li a {
+  font-family: EASPORTS15;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+.contenedor {
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.banner {
+  background-image: url(/imagenes/paginaPrincipal/fondoBanner.png);
+  background-size: cover;
+  height: 532px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.banner .imagenRonaldo {
+  background-image: url(/imagenes/paginaPrincipal/cristianoUno.png);
+  background-size: cover;
+  height: 532px;
+  width: 532px;
+  margin-left: 100px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.banner .infoBanner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.banner .infoBanner .logoFifaGrande {
+  background-image: url(/imagenes/paginaPrincipal/logoEAgrande.png);
+  background-size: cover;
+  height: 139px;
+  width: 545px;
+  margin-bottom: 10px;
+}
+
+.banner .infoBanner .texto {
+  width: 650px;
+}
+
+.banner .infoBanner .imagenBoton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.banner .infoBanner .imagenBoton .juegos {
+  background-image: url(/imagenes/paginaPrincipal/juegos.png);
+  height: 290px;
+  width: 374px;
+}
+
+.publicidad {
+  background-image: url(/imagenes/paginaPrincipal/fondoPublicidad.png);
+  background-size: cover;
+  height: 361px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.publicidad .masJuegos {
+  margin-left: 100px;
+}
+
+.publicidad .masJuegos .fondoInfoMasJuegos {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px 40px 40px 40px;
+  width: 805px;
+  height: 205px;
+}
+
+.publicidad .masJuegos .infoMasJuegos {
+  margin-left: 37px;
+  margin-right: 37px;
+  padding-top: 25px;
+}
+
+.publicidad .masJuegos .infoMasJuegos p {
+  font-size: 20px;
+}
+
+.publicidad .masJuegos .botonesPublicidad {
+  margin-left: 37px;
+  margin-top: 22px;
+}
+
+.publicidad .masJuegos .botonesPublicidad .peque {
+  margin-right: 35px;
+}
+
+.publicidad .imagenesJuegos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.publicidad .imagenesJuegos .madden {
+  background-image: url(/imagenes/paginaPrincipal/madden.png);
+  background-size: cover;
+  height: 276px;
+  width: 276px;
+  box-shadow: -13px 12px 31px -7px rgba(0, 0, 0, 0.75);
+  margin-right: 28px;
+}
+
+.publicidad .imagenesJuegos .madden:hover {
+  transform: scale(1.1);
+}
+
+.publicidad .imagenesJuegos .golf {
+  background-image: url(/imagenes/paginaPrincipal/golf.png);
+  background-size: cover;
+  height: 276px;
+  width: 276px;
+  box-shadow: -13px 12px 31px -7px rgba(0, 0, 0, 0.75);
+  margin-right: 28px;
+}
+
+.publicidad .imagenesJuegos .golf:hover {
+  transform: scale(1.1);
+}
+
+.publicidad .imagenesJuegos .ufc {
+  background-image: url(/imagenes/paginaPrincipal/ufc.png);
+  background-size: cover;
+  height: 276px;
+  width: 276px;
+  box-shadow: -13px 12px 31px -7px rgba(0, 0, 0, 0.75);
+  margin-right: 100px;
+}
+
+.publicidad .imagenesJuegos .ufc:hover {
+  transform: scale(1.1);
+}
+
+.publicidad .botonBlanco {
+  display: none;
+}
+
+.caracteristicaUno {
+  background-image: url(/imagenes/paginaPrincipal/fondoHunter.png);
+  background-size: cover;
+  height: 757px;
+}
+
+.caracteristicaUno .contenido {
+  margin-left: 762px;
+  padding-top: 55px;
+}
+
+.caracteristicaUno .fondoContenidoDos {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px 40px 40px 40px;
+  width: 805px;
+  height: 267px;
+  margin-left: 762px;
+  margin-top: 55px;
+}
+
+.caracteristicaUno .fondoContenidoDos .infoCaracteristicaUno {
+  margin-left: 37px;
+  margin-right: 37px;
+  padding-top: 25px;
+}
+
+.caracteristicaUno .fondoContenidoDos .infoCaracteristicaUno p {
+  font-size: 28px;
+}
+
+.caracteristicaUno .botonesCaracteristicaUno {
+  margin-left: 762px;
+  margin-top: 55px;
+}
+
+.caracteristicaDos {
+  background-image: url(/imagenes/paginaPrincipal/fondoCaracteristicaDos.png);
+  background-size: cover;
+  height: 674px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.caracteristicaDos .infoCaracteristicaDos .logoUltimate {
+  background-image: url(/imagenes/paginaPrincipal/logoEAUltimateTeam.png);
+  background-size: cover;
+  height: 98px;
+  width: 229px;
+}
+
+.caracteristicaDos .infoCaracteristicaDos .fondoTextoCaracteristicaDos {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px 40px 40px 40px;
+  width: 805px;
+  height: 280px;
+  margin-left: -37px;
+  margin-top: 55px;
+}
+
+.caracteristicaDos .infoCaracteristicaDos .fondoTextoCaracteristicaDos .textoCaracteristicaDos {
+  margin-left: 37px;
+  margin-right: 37px;
+  margin-top: 42px;
+}
+
+.caracteristicaDos .infoCaracteristicaDos .fondoTextoCaracteristicaDos .textoCaracteristicaDos p {
+  font-size: 28px;
+  padding-top: 25px;
+}
+
+.caracteristicaDos .infoCaracteristicaDos .botonesCaracteristicaDos {
+  margin-top: 25px;
+}
+
+.caracteristicaDos .imagenesJugadores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.caracteristicaDos .imagenesJugadores .lukaku {
+  background-image: url(/imagenes/paginaPrincipal/lukaku.png);
+  background-size: cover;
+  height: 383px;
+  width: 237px;
+  margin-top: 166px;
+  margin-right: 67px;
+}
+
+.caracteristicaDos .imagenesJugadores .dembele {
+  background-image: url(/imagenes/paginaPrincipal/dembele.png);
+  background-size: cover;
+  height: 383px;
+  width: 237px;
+  margin-top: -150px;
+}
+
+.caracteristicaDos .imagenesJugadores .neymar {
+  background-image: url(/imagenes/paginaPrincipal/neymar.png);
+  background-size: cover;
+  height: 383px;
+  width: 237px;
+  margin-top: 166px;
+  margin-left: 67px;
+}
+
+.caracteristicaTres {
+  background-image: url(/imagenes/paginaPrincipal/fondoCaracteristicaTres.png);
+  background-size: cover;
+  height: 762px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.caracteristicaTres .imagenRonaldoDos {
+  background-image: url(/imagenes/paginaPrincipal/cristianoDos.png);
+  background-size: cover;
+  height: 762px;
+  width: 463px;
+  margin-left: 100px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.caracteristicaTres .infoCaracteristicaTres {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  width: 1006px;
+  margin-right: 100px;
+}
+
+.caracteristicaTres .infoCaracteristicaTres .fondoTextoCaracteristicaTres {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px 40px 40px 40px;
+  width: 805px;
+  height: 377px;
+  margin-top: 15px;
+}
+
+.caracteristicaTres .infoCaracteristicaTres .fondoTextoCaracteristicaTres .texto p {
+  font-size: 28px;
+  padding-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.caracteristicaTres .infoCaracteristicaTres .botonesCaracteristicaTres {
+  margin-top: 37px;
+}
+
+.interaccion {
+  background-image: url(/imagenes/paginaPrincipal/fondoInteraccion.png);
+  background-size: cover;
+  height: 686px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.interaccion .descripcionInteraccion {
+  width: 811px;
+  margin-left: 100px;
+}
+
+.interaccion .descripcionInteraccion .textoInteraccion {
+  margin-top: 25px;
+  font-size: 28px;
+}
+
+.interaccion .descripcionInteraccion .datosUsuarioInteraccion {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.interaccion .descripcionInteraccion .datosUsuarioInteraccion .escribirCorreo {
+  margin-right: 16px;
+}
+
+.interaccion .interaccionJugadores {
+  width: 533px;
+  margin-right: 200px;
+}
+
+.interaccion .interaccionJugadores .imagenJugadorInteraccion {
+  background-size: cover;
+  width: 237px;
+  margin-left: 130px;
+  margin-bottom: 25px;
+}
+
+.interaccion .interaccionJugadores .valoracionJugadores h3 {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.interaccion .interaccionJugadores .valoracionJugadores input[type=range] {
+  width: 500px;
+  margin-top: 25px;
+}
+
+.interaccionDos {
+  background-image: url(/imagenes/paginaPrincipal/fondoInteraccionDos.png);
+  background-size: cover;
+  height: 1399px;
+}
+
+.interaccionDos .contenidoInteraccionDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.interaccionDos .contenidoInteraccionDos .modoCarrera {
+  text-align: center;
+  margin: 50px;
+}
+
+.interaccionDos .contenidoInteraccionDos .seleccionaEquipo {
+  text-align: center;
+  align-self: center;
+  font-size: 30px;
+  margin-top: -40px;
+  padding-bottom: 25px;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos {
+  width: 830px;
+  height: 861px;
+  background-color: #ededef;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoUno .atletico {
+  background-image: url(/imagenes/paginaPrincipal/atletico.png);
+  width: 151px;
+  height: 192px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  animation-timing-function: ease;
+  transition: transform 0.5s;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoUno .atletico:hover {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoUno h5 {
+  margin-left: 100px;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoDos .barcelona {
+  background-image: url(/imagenes/paginaPrincipal/barcelona.png);
+  width: 151px;
+  height: 153px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  animation-timing-function: ease;
+  transition: transform 0.5s;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoDos .barcelona:hover {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoDos h5 {
+  margin-left: 155px;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoTres .chelsea {
+  background-image: url(/imagenes/paginaPrincipal/chelsea.png);
+  width: 151px;
+  height: 151px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  animation-timing-function: ease;
+  transition: transform 0.5s;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoTres .chelsea:hover {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .izquierda .equipoTres h5 {
+  margin-left: 170px;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoCuatro .madrid {
+  background-image: url(/imagenes/paginaPrincipal/madrid.png);
+  width: 151px;
+  height: 210px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  animation-timing-function: ease;
+  transition: transform 0.5s;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoCuatro .madrid:hover {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoCuatro h5 {
+  margin-left: 145px;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoCinco .manchester {
+  background-image: url(/imagenes/paginaPrincipal/manchester.png);
+  width: 151px;
+  height: 153px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  animation-timing-function: ease;
+  transition: transform 0.5s;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoCinco .manchester:hover {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoCinco h5 {
+  margin-left: 100px;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoSeis .psg {
+  background-image: url(/imagenes/paginaPrincipal/psg.png);
+  width: 151px;
+  height: 151px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  animation-timing-function: ease;
+  transition: transform 0.5s;
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoSeis .psg:hover {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.interaccionDos .contenidoInteraccionDos .equipos .derecha .equipoSeis h5 {
+  margin-left: 95px;
+}
+
+.interaccionDos .contenidoInteraccionDos .modelado {
+  height: 1050px;
+}
+
+.interaccionDos .formulario {
+  background-image: url(../imagenes/checkout/fondoDatosUsuario.png);
+  background-size: cover;
+  height: 362px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.interaccionDos .formulario .infoUsuario {
+  margin-top: 42px;
+  margin-left: 106px;
+}
+
+.interaccionDos .formulario .infoUsuario input {
+  height: 35px;
+  width: 805px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Mukta Mahee;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 40px 40px 40px 40px;
+}
+
+.interaccionDos .formulario .infoUsuario .datosNombre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 42px;
+}
+
+.interaccionDos .formulario .infoUsuario .datosCuentaUsuario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 42px;
+}
+
+.interaccionDos .formulario .infoUsuario .datosTarjetaUsuario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 42px;
+}
+
+.interaccionDos .formulario .botonComprarUsuario {
+  margin-top: 209px;
+  margin-right: 337px;
+}
+
+.galerias {
+  background-image: url(/imagenes/paginaPrincipal/fondoGalerias.png);
+  background-size: cover;
+  height: 721px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+}
+
+.galerias .galeriaVideos .video {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.galerias .galeriaVideos .botonVideos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.galerias .galeriaImagenes {
+  width: 720px;
+}
+
+.especificaciones {
+  background-image: url(/imagenes/paginaPrincipal/fondoEspecificaciones.png);
+  background-size: cover;
+  height: 665px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.especificaciones .imagenRonaldoJuego {
+  background-image: url(/imagenes/paginaPrincipal/ronaldoJuego.png);
+  background-size: cover;
+  height: 579px;
+  width: 411px;
+  margin-left: 100px;
+}
+
+.especificaciones .informacionEspecificaciones {
+  width: 1221px;
+  margin-right: 100px;
+}
+
+.especificaciones .informacionEspecificaciones .textoInformacionEspecificaciones {
+  margin-top: 27px;
+}
+
+.especificaciones .informacionEspecificaciones .textoInformacionEspecificaciones p {
+  font-size: 28px;
+}
+
+.especificaciones .informacionEspecificaciones .requisitos {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.especificaciones .informacionEspecificaciones .requisitos .minimos {
+  width: 560px;
+}
+
+.especificaciones .informacionEspecificaciones .requisitos .minimos .listaMinimos li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.especificaciones .informacionEspecificaciones .requisitos .maximos {
+  width: 560px;
+}
+
+.especificaciones .informacionEspecificaciones .requisitos .maximos .listaMaximos li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.newsletter {
+  background-image: url(/imagenes/paginaPrincipal/fondoNewsletter.png);
+  background-size: cover;
+  height: 272px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.newsletter .informacionNewsletter {
+  width: 900px;
+  margin-left: 100px;
+}
+
+.newsletter .informacionNewsletter .parrafoNewsletter {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.newsletter .contactoNewsletter {
+  margin-right: 415px;
+}
+
+.newsletter .contactoNewsletter .informacionContactoNewsletter {
+  width: 600px;
+}
+
+.newsletter .contactoNewsletter .informacionContactoNewsletter .escribirCorreoNewsletter {
+  margin-left: 125px;
+}
+
+.newsletter .contactoNewsletter .informacionContactoNewsletter .botonNewsletter {
+  margin-top: 25px;
+  margin-left: 320px;
+}
+
+.footer {
+  background-image: url(/imagenes/paginaPrincipal/fondoFooter.png);
+  background-size: cover;
+  height: 212px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.footer a {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .infoUno {
+  margin-left: 100px;
+}
+
+.footer .infoUno .listaInfoUno li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  list-style: none;
+}
+
+.footer .infoDos {
+  margin-left: 92px;
+}
+
+.footer .infoDos .listaInfoDos li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .siguenos {
+  margin-left: 92px;
+}
+
+.footer .siguenos .listaSiguenos li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .lugares {
+  margin-left: 92px;
+}
+
+.footer .lugares .listaLugares li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .logoFooter {
+  background-image: url(/imagenes/paginaPrincipal/logoEAdos.png);
+  background-size: cover;
+  height: 70px;
+  width: 273px;
+  margin-left: 605px;
+}
+
+body {
+  background-color: #666;
+  color: #ddd;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body .tituloGaleriaImagenes {
+  padding: 25px 0;
+  text-align: center;
+}
+
+body .content {
+  /* Highlight.js Tomorrow Night style */
+}
+
+body .content a,
+body .content a:visited {
+  color: #9EB4CA;
+  text-decoration: none;
+}
+
+body .content h1,
+body .content h2,
+body .content h3,
+body .content footer,
+body .content .gallery {
+  text-align: center;
+}
+
+body .content pre {
+  width: 340px;
+  margin: 0 auto;
+  border: dashed 1px #aaa;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  body .content pre {
+    max-width: 98%;
+  }
+}
+
+body .content header,
+body .content footer {
+  display: block;
+  padding: .2em 0;
+  background-color: #555;
+  box-shadow: 0 0 8px #222;
+}
+
+body .content footer {
+  margin-top: 1.5em;
+}
+
+body .content .content {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+body .content .gallery:after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin: .5em 0 1.4em;
+  background-image: -webkit-linear-gradient(left, transparent 0%, #4d4d4d 50%, transparent 100%);
+  background-image: linear-gradient(to right, transparent 0%, #4d4d4d 50%, transparent 100%);
+}
+
+body .content .gallery img {
+  height: 100%;
+}
+
+body .content .gallery a {
+  width: 240px;
+  height: 180px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 4px 6px;
+  box-shadow: 0 0 4px -1px #000;
+}
+
+body .content .ribbon > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  body .content .sm-hidden {
+    display: none;
+  }
+}
+
+body .content .hljs-comment,
+body .content .hljs-quote {
+  color: #969896;
+}
+
+body .content .hljs-deletion,
+body .content .hljs-name,
+body .content .hljs-regexp,
+body .content .hljs-selector-class,
+body .content .hljs-selector-id,
+body .content .hljs-tag,
+body .content .hljs-template-variable,
+body .content .hljs-variable {
+  color: #c66;
+}
+
+body .content .hljs-tag {
+  color: #f8f8f2;
+}
+
+body .content .hljs-built_in,
+body .content .hljs-builtin-name,
+body .content .hljs-link,
+body .content .hljs-literal,
+body .content .hljs-meta,
+body .content .hljs-number,
+body .content .hljs-params,
+body .content .hljs-type {
+  color: #de935f;
+}
+
+body .content .hljs-attr {
+  color: #f0c674;
+}
+
+body .content .hljs-addition,
+body .content .hljs-bullet,
+body .content .hljs-string,
+body .content .hljs-symbol {
+  color: #b5bd68;
+}
+
+body .content .hljs-section,
+body .content .hljs-title {
+  color: #81a2be;
+}
+
+body .content .hljs-keyword,
+body .content .hljs-selector-tag {
+  color: #b294bb;
+}
+
+body .content .hljs {
+  display: block;
+  overflow-x: auto;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: .8em;
+}
+
+body .content .hljs-emphasis {
+  font-style: italic;
+}
+
+body .content .hljs-strong {
+  font-weight: 700;
+}
+
+body .gallery a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1900px) {
+  .publicidad {
+    margin-left: -50px;
+  }
+  .publicidad .masJuegos {
+    margin-right: 25px;
+  }
+  .caracteristicaDos .infoCaracteristicaDos {
+    margin-left: 30px;
+  }
+  .especificaciones .imagenRonaldoJuego {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .publicidad {
+    margin-left: -70px;
+    height: 600px;
+  }
+  .publicidad .masJuegos {
+    margin-right: 50px;
+    margin-top: 0px;
+  }
+  .publicidad .imagenesJuegos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    height: 600px;
+  }
+  .publicidad .imagenesJuegos .golf {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    margin-bottom: 50px;
+  }
+  .publicidad .imagenesJuegos .ufc,
+  .publicidad .imagenesJuegos .madden {
+    margin-top: 50px;
+  }
+  .caracteristicaDos .imagenesJugadores {
+    margin-left: 25px;
+  }
+  .especificaciones .imagenRonaldoJuego {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .publicidad .imagenesJuegos .ufc {
+    margin-left: -100px;
+    margin-top: 20px;
+  }
+  .publicidad .imagenesJuegos .madden {
+    margin-top: 20px;
+  }
+  .publicidad .imagenesJuegos .golf {
+    margin-bottom: 20px;
+    margin-left: -100px;
+  }
+  .interaccion .interaccionJugadores {
+    margin-right: 100px;
+  }
+  .newsletter .informacionContactoNewsletter {
+    margin-right: -200px;
+  }
+  .footer .logoFooter {
+    margin-left: 500px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .publicidad {
+    margin-left: -10px;
+    height: 600px;
+  }
+  .publicidad .masJuegos {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .publicidad .imagenesJuegos {
+    margin-left: 0px;
+  }
+  .caracteristicaDos .imagenesJugadores .lukaku {
+    margin-right: 25px;
+  }
+  .caracteristicaDos .imagenesJugadores .neymar {
+    margin-left: 25px;
+  }
+  .caracteristicaTres .imagenRonaldoDos {
+    margin-left: 50px;
+  }
+  .caracteristicaTres .infoCaracteristicaTres {
+    margin-right: 25px;
+  }
+  .especificaciones .imagenRonaldoJuego {
+    margin-left: 25px;
+  }
+  .especificaciones .informacionEspecificaciones {
+    margin-right: 25px;
+  }
+  .footer .logoFooter {
+    margin-left: 400px;
+  }
+}
+
+@media (max-width: 1550px) {
+  header .contenedor .logoDos {
+    display: none;
+  }
+  .publicidad .masJuegos {
+    margin-right: 0px;
+  }
+  .publicidad .masJuegos .fondoInfoMasJuegos {
+    width: 700px;
+  }
+  .publicidad .imagenesJuegos {
+    margin-right: 100px;
+  }
+  .publicidad .imagenesJuegos .ufc {
+    margin-right: 0px;
+    margin-left: -100px;
+  }
+  .publicidad .imagenesJuegos .madden {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+  .publicidad .imagenesJuegos .golf {
+    margin-right: 0;
+  }
+  .caracteristicaUno .contenido {
+    margin-left: 600px;
+  }
+  .caracteristicaUno .contenidoDos {
+    margin-left: -200px;
+  }
+  .caracteristicaDos .imagenesJugadores {
+    margin-bottom: 150px;
+  }
+  .caracteristicaDos .imagenesJugadores .dembele {
+    display: none;
+  }
+  .caracteristicaTres .imagenRonaldoDos {
+    margin-left: 0;
+  }
+  .caracteristicaTres .infoCaracteristicaTres {
+    margin-right: 100;
+    width: 800px;
+  }
+  .galerias .galeriaVideos {
+    margin-left: 50px;
+  }
+  .especificaciones .imagenRonaldoJuego {
+    display: none;
+  }
+  .especificaciones .informacionEspecificaciones {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+  .newsletter {
+    height: 400px;
+  }
+  .footer .logoFooter {
+    margin-left: 100;
+  }
+}
+
+@media (max-width: 1422px) {
+  .publicidad .imagenesJuegos .ufc {
+    display: none;
+  }
+  .publicidad .imagenesJuegos .golf {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 120px 0 0 0;
+  }
+  .publicidad .imagenesJuegos .madden {
+    margin: 120px 25px 0 0;
+  }
+  .galerias {
+    height: 1100px;
+  }
+  .interaccion {
+    height: 800px;
+  }
+  .interaccion .descripcionInteraccion {
+    margin: 0 0 0 25px;
+  }
+  .interaccion .interaccionJugadores {
+    margin: 0;
+  }
+  .interaccion .interaccionJugadores h3 {
+    margin: 0 0 0 25px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .banner .imagenRonaldo {
+    margin-left: 0;
+  }
+  .banner .infoBanner {
+    margin-right: 0px;
+  }
+  .publicidad .imagenesJuegos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+  }
+  .publicidad .imagenesJuegos .golf {
+    display: none;
+  }
+  .publicidad .imagenesJuegos .botonBlanco {
+    display: block;
+    margin-top: 50px;
+  }
+  .caracteristicaUno .contenido {
+    margin-left: 300px;
+  }
+  .caracteristicaUno .contenidoDos {
+    margin-left: -500px;
+  }
+  .caracteristicaDos .neymar {
+    display: none;
+  }
+  .caracteristicaTres .imagenRonaldoDos {
+    display: none;
+  }
+  .caracteristicaTres .infoCaracteristicaTres {
+    margin-left: 200px;
+    margin-right: 0;
+  }
+  .interaccion {
+    height: 1000px;
+  }
+  .interaccion .descripcionInteraccion {
+    width: 500px;
+    margin-left: 100px;
+  }
+  .interaccion .descripcionInteraccion .datosUsuarioInteraccion .escribirCorreo .input {
+    width: 300px;
+  }
+  .interaccion .interaccionJugadores {
+    margin-right: 100px;
+  }
+  .especificaciones .informacionEspecificaciones {
+    width: 1000px;
+  }
+  .newsletter {
+    height: 550px;
+    justify-content: space-between;
+  }
+  .newsletter .tituloInformacionNewsletter {
+    width: 500px;
+  }
+  .newsletter .informacionContactoNewsletter {
+    width: 400px;
+  }
+  .newsletter .informacionContactoNewsletter .escribirCorreoNewsletter {
+    margin: 0;
+  }
+  .newsletter .informacionContactoNewsletter .escribirCorreoNewsletter .input {
+    width: 300px;
+    margin: 0;
+  }
+  .newsletter .informacionContactoNewsletter .botonNewsletter button {
+    margin-left: -130px;
+  }
+  .footer .logoFooter {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  header .contenedor {
+    margin: 0 20px 0 20px;
+  }
+  header .contenedor .logoUno {
+    display: none;
+  }
+  .banner .imagenRonaldo {
+    display: none;
+  }
+  .banner .infoBanner {
+    margin-left: 20%;
+  }
+  .interaccion .interaccionJugadores .valoracionJugadores {
+    margin-left: 80px;
+  }
+  .interaccion .interaccionJugadores .valoracionJugadores input[type=range] {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .galerias .galeriaVideos {
+    transform: scale(0.8);
+    margin-left: -50px;
+  }
+  .galerias .galeriaVideos button {
+    transform: scale(1.2);
+  }
+  .galerias .galeriaImagenes {
+    margin-right: 100px;
+  }
+  .footer .logoFooter {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .contenedor .boton {
+    display: none;
+  }
+  header .contenedor nav {
+    margin-left: 80px;
+  }
+  .publicidad {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: flex-start;
+    height: 650px;
+  }
+  .publicidad .masJuegos {
+    margin-left: 150px;
+    margin-top: 25px;
+  }
+  .publicidad .masJuegos .botonesPublicidad {
+    margin-left: 250px;
+  }
+  .publicidad .imagenesJuegos {
+    margin: -100px 0 0 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+  .publicidad .imagenesJuegos .botonBlanco {
+    margin-top: 250px;
+  }
+  .caracteristicaUno .contenido {
+    margin-left: 100px;
+  }
+  .caracteristicaUno .contenidoDos {
+    margin-left: -700px;
+  }
+  .caracteristicaDos .imagenesJugadores {
+    display: none;
+  }
+  .caracteristicaTres .infoCaracteristicaTres {
+    margin-left: 100px;
+  }
+  .interaccion {
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+  .interaccion .descripcionInteraccion {
+    margin-top: 50px;
+    width: 600px;
+  }
+  .interaccion .descripcionInteraccion .tituloInteraccion {
+    width: 700px;
+  }
+  .interaccion .descripcionInteraccion p {
+    width: 700px;
+  }
+  .interaccion .descripcionInteraccion .datosUsuarioInteraccion .escribirCorreo {
+    width: 600px;
+  }
+  .interaccion .descripcionInteraccion .datosUsuarioInteraccion .escribirCorreo input {
+    width: 400px;
+  }
+  .interaccion .interaccionJugadores {
+    margin: 50px 0 0 220px;
+  }
+  .interaccion .interaccionJugadores .valoracionJugadores {
+    margin-left: -50px;
+  }
+  .interaccion .interaccionJugadores .valoracionJugadores input[type=range] {
+    margin-left: 150px;
+  }
+  .galerias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    height: 1360px;
+  }
+  .galerias .galeriaVideos {
+    transform: scale(1);
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .galerias .galeriaImagenes {
+    margin: 25px 0 0 115px;
+  }
+  .especificaciones {
+    height: 800px;
+  }
+  .especificaciones .informacionEspecificaciones {
+    margin: 0 0 0 100px;
+    width: 800px;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    height: 450px;
+  }
+  .newsletter .informacionNewsletter {
+    margin: 0;
+  }
+  .newsletter .informacionNewsletter .tituloInformacionNewsletter {
+    margin: 50px 0 0 100px;
+  }
+  .newsletter .informacionNewsletter .parrafoNewsletter {
+    margin: 0 0 0 100px;
+  }
+  .newsletter .contactoNewsletter {
+    margin: 0;
+  }
+  .newsletter .contactoNewsletter .informacionContactoNewsletter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+  .newsletter .contactoNewsletter .informacionContactoNewsletter .escribirCorreoNewsletter {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .contenedor nav {
+    margin-left: -10px;
+  }
+  header li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  header li:last-child {
+    margin-right: 0;
+  }
+  .banner .infoBanner {
+    margin-left: 70px;
+  }
+  .publicidad .fondoInfoMasJuegos {
+    margin-left: -110px;
+  }
+  .publicidad .imagenesJuegos {
+    margin-left: 180px;
+  }
+  .publicidad .botonesPublicidad {
+    margin-left: 0;
+  }
+  .caracteristicaUno .contenido {
+    margin-left: 50px;
+  }
+  .caracteristicaUno .contenidoDos {
+    margin-left: -750px;
+  }
+  .caracteristicaUno .contenidoDos .fondoContenidoDos {
+    width: 700px;
+    height: 300px;
+  }
+  .caracteristicaDos .infoCaracteristicaDos .fondoTextoCaracteristicaDos {
+    width: 700px;
+    height: 320px;
+  }
+  .caracteristicaTres {
+    margin-left: -70px;
+    height: 860px;
+  }
+  .caracteristicaTres .infoCaracteristicaTres .fondoTextoCaracteristicaTres {
+    width: 700px;
+    height: 450px;
+  }
+  .interaccion .descripcionInteraccion {
+    margin-left: 40px;
+  }
+  .interaccion .interaccionJugadores {
+    margin-left: 100px;
+  }
+  .galerias {
+    margin-left: -50px;
+  }
+  .galerias .galeriaVideos {
+    margin-left: 60px;
+    width: 750px;
+  }
+  .galerias .galeriaImagenes {
+    margin-left: 60px;
+    width: 750px;
+  }
+  .especificaciones {
+    height: 880px;
+  }
+  .especificaciones .informacionEspecificaciones {
+    margin-left: 30px;
+    width: 700px;
+  }
+  .newsletter .informacionNewsletter {
+    margin-left: -40px;
+    margin-top: -25px;
+    width: 700px;
+  }
+  .newsletter .contactoNewsletter {
+    margin-left: -80px;
+  }
+  .footer .infoUno,
+  .footer .infoDos,
+  .footer .siguenos,
+  .footer .lugares {
+    margin-left: 50px;
+  }
+}
+/*# sourceMappingURL=juego.css.map */

@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,600,700");
+@font-face {
+  font-family: EASPORTS15;
+  src: url(../fonts/ea_font/EASPORTS15.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: Mukta Mahee;
+  color: white;
+}
+
+h1 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 75px;
+}
+
+h2 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 48px;
+}
+
+h3 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 36px;
+}
+
+h4 {
+  font-family: Mukta Mahee;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+h5 {
+  font-family: EASPORTS15;
+  color: #221d53;
+  font-size: 18px;
+  position: absolute;
+  z-index: 999;
+  margin-top: -68px;
+  margin-left: 81px;
+}
+
+h6 {
+  font-family: EASPORTS15;
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  background-image: url(../imagenes/juegos/fondoBotonGrande.png);
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  font-family: EASPORTS15;
+  color: white;
+  height: 68px;
+  width: 202px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.botonBlanco {
+  background-image: url(../imagenes/juegos/fondoBotonBlancoPeque.png);
+  background-size: cover;
+  font-family: EASPORTS15;
+  color: white;
+  height: 57px;
+  width: 166px;
+  border: none;
+}
+
+.masPeque {
+  background-image: url(../imagenes/checkout/botonMasPeque.png);
+  background-size: cover;
+  font-family: EASPORTS15;
+  color: white;
+  height: 37px;
+  width: 107px;
+  border: none;
+}
+
+.masGrande {
+  background-image: url(../imagenes/checkout/botonMasGrande.png);
+  background-size: cover;
+  font-family: EASPORTS15;
+  font-size: 29px;
+  color: white;
+  height: 111px;
+  width: 329px;
+  border: none;
+}
+
+.input {
+  height: 54px;
+  width: 574px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Mukta Mahee;
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 40px 40px 40px 40px;
+}
+
+.inputDos {
+  height: 35px;
+  width: 805px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Mukta Mahee;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  border-radius: 40px 40px 40px 40px;
+}
+
+input[type=range] {
+  width: 140px;
+  margin-top: 5px;
+}
+
+header {
+  background: #221d53;
+}
+
+header li a {
+  font-family: EASPORTS15;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+.contenedor {
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.carrito .carri {
+  margin-left: -1.5px;
+}
+
+.filtros {
+  background-color: #2d2d2d;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.filtros h6 {
+  margin-left: 75px;
+  margin-bottom: 10px;
+}
+
+.filtros .minMax,
+.filtros .minMaxUno {
+  margin-top: -10px;
+  background-color: #2d2d2d;
+}
+
+.filtros ul,
+.filtros ol {
+  list-style: none;
+}
+
+.filtros a {
+  margin-top: 15px;
+}
+
+.filtros li {
+  margin-bottom: 15px;
+}
+
+.filtros .infoDeFiltroUno,
+.filtros .infoDeFiltroDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  margin-left: -25px;
+}
+
+.filtros .infoDeFiltroUno p,
+.filtros .infoDeFiltroDos p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.filtros .nav > li {
+  float: left;
+}
+
+.filtros .nav li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.filtros .nav li a:hover {
+  background-color: #434343;
+}
+
+.filtros .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.filtros .nav li:hover > ul {
+  display: block;
+}
+
+.filtros .nav li ul li {
+  position: relative;
+}
+
+.filtros .nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+.filtros .categoria {
+  margin-left: 106px;
+  margin-right: 83px;
+}
+
+.filtros .precio {
+  margin-right: 83px;
+}
+
+.filtros .buscar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  margin-left: 375px;
+}
+
+.filtros .buscar .input {
+  margin-left: 100px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.filtros .buscar .lupa {
+  margin-left: -75px;
+}
+
+.publicidad {
+  background-image: url(../imagenes/juegos/fondoPublicidad.png);
+  background-size: cover;
+  height: 288px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.publicidad .contenidoPublicidad {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px 40px 40px 40px;
+  width: 805px;
+  height: 205px;
+  margin-left: 106px;
+}
+
+.publicidad .contenidoPublicidad .infoPublicidad {
+  margin-left: 37px;
+  margin-right: 37px;
+  padding-top: 25px;
+}
+
+.publicidad .contenidoPublicidad .infoPublicidad p {
+  font-size: 20px;
+}
+
+.publicidad .logoPublicidad {
+  margin-right: 100px;
+}
+
+.juegos1 {
+  background-image: url(../imagenes/juegos/fondoJuegos1.png);
+  background-size: cover;
+  height: 1920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+
+.juegos1 .maddenJuegos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden {
+  margin: 0 50px 50px 50px;
+  width: 349px;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden .imagenDeMadden {
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  width: 349px;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden .logoDeMadden {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 63px;
+  background-size: cover;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden .precioDeMadden {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden .precioDeMadden p {
+  font-size: 30px;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden .precioDeMadden h3 {
+  font-size: 30px;
+}
+
+.juegos1 .maddenJuegos1 .maquetacionMadden .botonDeMadden {
+  margin-left: -30px;
+  width: 425px;
+  margin-top: 25px;
+  transform: scale(0.8);
+}
+
+.newsletter {
+  background-image: url(../imagenes/juegos/fondoNewsletter.png);
+  background-size: cover;
+  height: 272px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.newsletter .informacionNewsletter {
+  width: 900px;
+  margin-left: 100px;
+}
+
+.newsletter .informacionNewsletter .parrafoNewsletter {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.newsletter .contactoNewsletter {
+  margin-right: 415px;
+}
+
+.newsletter .contactoNewsletter .informacionContactoNewsletter {
+  width: 600px;
+}
+
+.newsletter .contactoNewsletter .informacionContactoNewsletter .escribirCorreoNewsletter {
+  margin-left: 125px;
+}
+
+.newsletter .contactoNewsletter .informacionContactoNewsletter .botonNewsletter {
+  margin-top: 25px;
+  margin-left: 320px;
+}
+
+.footer {
+  background-image: url(../imagenes/juegos/fondoFooter.png);
+  background-size: cover;
+  height: 212px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.footer a {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .infoUno {
+  margin-left: 100px;
+}
+
+.footer .infoUno .listaInfoUno li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  list-style: none;
+}
+
+.footer .infoDos {
+  margin-left: 92px;
+}
+
+.footer .infoDos .listaInfoDos li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .siguenos {
+  margin-left: 92px;
+}
+
+.footer .siguenos .listaSiguenos li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .lugares {
+  margin-left: 92px;
+}
+
+.footer .lugares .listaLugares li {
+  list-style: none;
+  font-family: Mukta Mahee;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.footer .logoFooter {
+  background-image: url(../imagenes/juegos/logoEA.png);
+  background-size: cover;
+  height: 43px;
+  width: 274px;
+  margin-left: 605px;
+}
+
+.compra {
+  background-image: url(../imagenes/compra/fondoCompra.png);
+  background-size: cover;
+  height: 689px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.compra .imagenDeJuego {
+  margin: 100px 100px 0 100px;
+  align-items: center;
+}
+
+.compra .imagenDeJuego .imagenDeMadden {
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.compra .imagenDeJuego .logoDeMadden {
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+.compra .infoDeJuego {
+  margin-top: 100px;
+}
+
+.compra .infoDeJuego .nombreDeJuego h2 {
+  margin-bottom: 30px;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px 40px 40px 40px;
+  width: 805px;
+  height: 300px;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos {
+  width: 770px;
+  height: 300px;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .caracteristicaDeJuego p {
+  font-size: 20px;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .precioDeMadden {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .precioDeMadden p {
+  font-size: 43px;
+  margin-top: -18px;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .fechaDeEstreno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .fechaDeEstreno p {
+  font-size: 43px;
+  margin-top: -18px;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .peso {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.compra .infoDeJuego .fondoDeInfoJuegos .tamanoDeInfoJuegos .peso p {
+  font-size: 43px;
+  margin-top: -18px;
+}
+
+.compra .botonComprarJuego {
+  margin-top: 280px;
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+.misJuegos {
+  background-image: url(../imagenes/checkout/fondoMisJuegos.png);
+  background-size: cover;
+  height: 880px;
+}
+
+.misJuegos .infoMisJuegos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.misJuegos .infoMisJuegos .tituloMisJuegos {
+  margin-left: 106px;
+  margin-top: 45px;
+}
+
+.misJuegos .infoMisJuegos .logoMisJuegos {
+  background-image: url(../imagenes/juegos/logoEAGrande.png);
+  background-size: cover;
+  height: 76px;
+  width: 484px;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+
+.misJuegos .imagenesDeJuegosEnCarrito ul {
+  width: 1700px;
+  margin-left: 100px;
+  list-style: none;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.misJuegos .imagenesDeJuegosEnCarrito ul .claseLi {
+  width: 260px;
+  margin-right: 80px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.misJuegos .imagenesDeJuegosEnCarrito ul .claseLi .imagenDeCarrito {
+  width: 260px;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.misJuegos .imagenesDeJuegosEnCarrito ul .claseLi .logoDeCarrito {
+  margin-top: 25px;
+}
+
+.datosUsuario {
+  background-image: url(../imagenes/checkout/fondoDatosUsuario.png);
+  background-size: cover;
+  height: 362px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.datosUsuario .infoUsuario {
+  margin-top: 42px;
+  margin-left: 106px;
+}
+
+.datosUsuario .infoUsuario .datosNombre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 42px;
+}
+
+.datosUsuario .infoUsuario .datosNombre .botonNombreUsuario {
+  margin-left: 96px;
+}
+
+.datosUsuario .infoUsuario .datosCuentaUsuario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 42px;
+}
+
+.datosUsuario .infoUsuario .datosCuentaUsuario .botonCuentaUsuario {
+  margin-left: 96px;
+}
+
+.datosUsuario .infoUsuario .datosTarjetaUsuario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 42px;
+}
+
+.datosUsuario .infoUsuario .datosTarjetaUsuario .botonTarjetaUsuario {
+  margin-left: 96px;
+}
+
+.datosUsuario .botonComprarUsuario {
+  margin-top: 209px;
+  margin-right: 337px;
+}
+/*# sourceMappingURL=estilos.css.map */
