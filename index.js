@@ -14,7 +14,7 @@ app.set('view engine', 'hbs');
 app.use(express.static('public'));
 
 // Conectarse a Base de Datos
-MongoClient.connect('mongodb+srv://@cluster0-pnvy4.mongodb.net/tienda', {
+MongoClient.connect('mongodb+srv://cluster0-pnvy4.mongodb.net/tienda', {
 
     auth: {
         user: 'Daniel',
