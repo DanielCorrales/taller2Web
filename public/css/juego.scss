@@ -504,11 +504,6 @@ header li:last-child {
     background-image: url(/imagenes/paginaPrincipal/fondoInteraccionDos.png);
     background-size: cover;
     height: 1399px;
-    .tituloInteraccionDos {
-        padding-top: 45px;
-        margin-left: $tamanoMargen;
-        margin-bottom: 45px;
-    }
     .contenidoInteraccionDos {
         display: flex;
         flex-direction: row;
@@ -516,6 +511,12 @@ header li:last-child {
         justify-content: flex-start;
         align-content: stretch;
         align-items: center;
+.modoCarrera{
+
+    text-align: center;
+    margin: 50px;
+}
+
         .equipos {
             width: 830px;
             height: 861px;
@@ -609,6 +610,13 @@ header li:last-child {
                 }
             }
         }
+
+.modelado{
+
+
+    height: 1050px;
+}
+
     }
     .formulario {
         background-image: url(../imagenes/checkout/fondoDatosUsuario.png);

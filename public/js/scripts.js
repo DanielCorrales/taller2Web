@@ -2,11 +2,11 @@ var scene = new THREE.Scene();
 
 var scene3d = document.getElementById("interaccionDosId");
 var CANVAS_WIDTH = 1080;
-var CANVAS_HEIGHT = 860;
+var CANVAS_HEIGHT = 1050;
 
 
 var camera = new THREE.PerspectiveCamera(75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000);
-camera.position.z = 500;
+camera.position.z = 600;
 camera.lookAt(scene.position);
 
 var renderer = new THREE.WebGLRenderer({
