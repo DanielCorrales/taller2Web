@@ -61,7 +61,7 @@ mtlLoader.load('CristianoRonaldo.mtl', function (materials) {
     objLoader.load('CristianoRonaldo.obj', function (object) {
 
         scene.add(object);
-        object.position.y -= 300;
+        object.position.y -= 350;
         object.scale.x = -1;
 
     });
@@ -79,7 +79,7 @@ botonAtletico.onclick = function () {
         objLoader.load('CristianoRonaldo.obj', function (object) {
 
             scene.add(object);
-            object.position.y -= 300;
+            object.position.y -= 350;
             object.scale.x = -1;
 
         });
@@ -101,7 +101,7 @@ botonReal.onclick = function () {
         objLoader.load('CristianoRonaldo.obj', function (object) {
 
             scene.add(object);
-            object.position.y -= 300;
+            object.position.y -= 350;
             object.scale.x = -1;
 
         });
@@ -110,6 +110,87 @@ botonReal.onclick = function () {
 
 
 
+}
+
+//BARCELONA*************************************************
+botonBarcelona.onclick = function () {
+
+    mtlLoader.load('CristianoRonaldoBarcelona.mtl', function (materials) {
+
+        materials.preload();
+        objLoader.setMaterials(materials);
+        objLoader.setPath('/modelado/');
+
+        objLoader.load('CristianoRonaldo.obj', function (object) {
+
+            scene.add(object);
+            object.position.y -= 350;
+            object.scale.x = -1;
+
+        });
+
+    });
+}
+
+
+//MANCHESTER*************************************************
+botonManchester.onclick = function () {
+
+    mtlLoader.load('CristianoRonaldoManchester.mtl', function (materials) {
+
+        materials.preload();
+        objLoader.setMaterials(materials);
+        objLoader.setPath('/modelado/');
+
+        objLoader.load('CristianoRonaldo.obj', function (object) {
+
+            scene.add(object);
+            object.position.y -= 350;
+            object.scale.x = -1;
+
+        });
+
+    });
+}
+
+//CHELSEA*************************************************
+botonChelsea.onclick = function () {
+
+    mtlLoader.load('CristianoRonaldoChelsea.mtl', function (materials) {
+
+        materials.preload();
+        objLoader.setMaterials(materials);
+        objLoader.setPath('/modelado/');
+
+        objLoader.load('CristianoRonaldo.obj', function (object) {
+
+            scene.add(object);
+            object.position.y -= 350;
+            object.scale.x = -1;
+
+        });
+
+    });
+}
+
+//PSG*************************************************
+botonPsg.onclick = function () {
+
+    mtlLoader.load('CristianoRonaldoPsg.mtl', function (materials) {
+
+        materials.preload();
+        objLoader.setMaterials(materials);
+        objLoader.setPath('/modelado/');
+
+        objLoader.load('CristianoRonaldo.obj', function (object) {
+
+            scene.add(object);
+            object.position.y -= 350;
+            object.scale.x = -1;
+
+        });
+
+    });
 }
 
 

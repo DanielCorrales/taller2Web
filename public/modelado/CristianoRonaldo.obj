@@ -2,6 +2,10 @@
 
 mtllib ./CristianoRonaldo.mtl
 mtllib ./CristianoRonaldoReal.mtl
+mtllib ./CristianoRonaldoBarcelona.mtl
+mtllib ./CristianoRonaldoChelsea.mtl
+mtllib ./CristianoRonaldoManchester.mtl
+mtllib ./CristianoRonaldoPsg.mtl
 
 v -1.01448130607605 269.88308715820312 6.24216556549072
 v -0.89025914669037 275.81124877929688 7.51889419555664
