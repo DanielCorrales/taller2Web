@@ -47,7 +47,7 @@ app.get('/juego', (req, res) => {
 
 app.get('/', (req, res) => {
 
-    var prod = db.collection('juegos')
+    var prod = db.collection('tienda')
         .find();
 
     if (req.query.categoria)
@@ -83,7 +83,7 @@ app.get('/contact', (req, res) => {
 })
 // obtiene nombre y manda a pagina compra
 app.get('/compra/:nombre', (req, res) => {
-    db.collection('juegos').find({
+    db.collection('tienda').find({
         nombre: req.params.nombre
     }).toArray((err, result) => {
         res.render('compra', {
@@ -98,7 +98,7 @@ app.get('/productosPorId', (req, res) => {
     arreglo = arreglo.map(function (id) {
         return new ObjectID(id);
     });
-    var prod = db.collection('juegos')
+    var prod = db.collection('tienda')
         .find({
             _id: {
                 $in: arreglo
