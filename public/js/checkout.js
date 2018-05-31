@@ -2,9 +2,9 @@
 
 console.log(arreglo);
 
-fetch('http://localhost:5000/productosPorId?id='+arreglo)
+fetch('https://mi-tienda-de-juegos.herokuapp.com/productosPorId?id='+arreglo)
 .then(function(res){
-    console.log('http://localhost:5000/productosPorId?id='+arreglo);
+    console.log('https://mi-tienda-de-juegos.herokuapp.com/productosPorId?id='+arreglo);
     return res.json();
 })
 .then(function(res){
