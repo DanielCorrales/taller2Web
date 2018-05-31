@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient
-    ObjectID = require('mongodb').ObjectID,
+ObjectID = require('mongodb').ObjectID,
     express = require('express'),
     engines = require('consolidate');
 
@@ -14,13 +14,20 @@ app.set('view engine', 'hbs');
 app.use(express.static('public'));
 
 // Conectarse a Base de Datos
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://@cluster0-pnvy4.mongodb.net/tienda', {
+
+    auth: {
+        user: 'Daniel',
+        password: '3113269269d'
+    }
+}, function (err, client) {
+
     if (err) throw err;
 
-    db = client.db('juegos');
+    db = client.db('tienda');
 
     // Iniciar servidor
-    app.listen(5000);
+    app.listen(process.env.PORT || 5000);
     console.log("Escuchando servidor")
 });
 
@@ -88,11 +95,15 @@ app.get('/compra/:nombre', (req, res) => {
 //envia el arreglo a la pagina de checkout
 app.get('/productosPorId', (req, res) => {
     var arreglo = req.query.id.split(',');
-    arreglo = arreglo.map(function(id) {
+    arreglo = arreglo.map(function (id) {
         return new ObjectID(id);
     });
     var prod = db.collection('juegos')
-        .find({ _id: { $in: arreglo } })
+        .find({
+            _id: {
+                $in: arreglo
+            }
+        })
         .toArray((err, result) => {
             res.send(result);
         });
