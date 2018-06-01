@@ -263,15 +263,15 @@
             </div>
             <div class="datosCuentaUsuario">
                 <div class="cuentaUsuario">
-                    <input type="text" name="direccion" class="inputDos" placeholder="Edad"> </div>
+                    <input type="text" id="edadDatos" name="direccion" class="inputDos" placeholder="Edad"> </div>
             </div>
             <div class="datosTarjetaUsuario">
                 <div class="tarjetaUsuario">
-                    <input type="text" name="direccion" class="inputDos" placeholder="Nacionalidad"> </div>
+                    <input type="text" id="nacionalidadDatos" name="direccion" class="inputDos" placeholder="Nacionalidad"> </div>
             </div>
         </div>
         <div class="botonComprarUsuario">
-            <button class="masGrande" id="botonComprar">Comprar</button>
+            <button class="masGrande" id="botonComprar" onclick="comprarJugador()">Comprar</button>
         </div>
         </div>
     </div>
@@ -483,7 +483,7 @@
         </div>
         <div class="logoFooter"></div>
     </div>
-
+<script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
 		<script src="js/OrbitControls.js"></script>
 		<script src="js/OBJLoader.js"></script>
@@ -497,6 +497,7 @@
     <script src="js/highlight.min.js" async></script>
     <script src="js/index.js"></script>
     <script src="js/indexDos.js"></script>
+    
 </body>
 
 </html>

@@ -45,6 +45,11 @@ var botonBarcelona = document.getElementById("barcelona");
 var botonChelsea = document.getElementById("chelsea");
 var botonManchester = document.getElementById("manchester");
 var botonPsg = document.getElementById("psg");
+var equipos = 'Atletico';
+
+var NombreJugador = document.getElementById("cuadro");
+var edadJugador = document.getElementById("edadDatos");
+var nacionalidadJugador = document.getElementById("nacionalidadDatos");
 
 var mtlLoader = new THREE.MTLLoader();
 var objLoader = new THREE.OBJLoader();
@@ -85,7 +90,7 @@ botonAtletico.onclick = function () {
         });
 
     });
-
+    equipos = 'Atletico';
 }
 
 
@@ -108,7 +113,7 @@ botonReal.onclick = function () {
 
     });
 
-
+    equipos = 'Real Madrid';
 
 }
 
@@ -130,6 +135,7 @@ botonBarcelona.onclick = function () {
         });
 
     });
+    equipos = 'Barcelona';
 }
 
 
@@ -151,6 +157,7 @@ botonManchester.onclick = function () {
         });
 
     });
+    equipos = 'Manchester';
 }
 
 //CHELSEA*************************************************
@@ -171,6 +178,7 @@ botonChelsea.onclick = function () {
         });
 
     });
+    equipos = 'Chelsea';
 }
 
 //PSG*************************************************
@@ -191,7 +199,27 @@ botonPsg.onclick = function () {
         });
 
     });
+    equipos = 'Paris saint germain';
 }
+
+
+function comprarJugador() {
+
+    swal({
+
+        title: '<i>¡Jugador Comprado!</i>',
+        type: 'info',
+        html: '<b>Equipo: </b>' + equipos + '</br>' +
+            '<b>Nombre: </b>' + NombreJugador.value +'</br>' +
+            '<b>Edad: </b>' + edadJugador.value +'</br>' +
+            '<b>Nacionalidad: </b>' + nacionalidadJugador.value,
+        showConfirmButton: false,
+        timer: 3000
+    })
+
+
+}
+
 
 
 var animate = function () {
